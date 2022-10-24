@@ -1,0 +1,183 @@
+:root
+{
+    --title-color:rgb(207,51,65);
+    --tel-text: rgb(70,57,57);
+    --tel-highlightes-text: rgb(47, 47, 163);;
+
+    --sign-colour-blue: rgb(8,37,182);
+    --sign-colour-yellow: rgb(255,191,64);
+    --sign-colour-red: rgb(207,51,65);
+
+    --backgorund-colour: white;
+
+    --max-height: 85px;
+    --min-height: 75px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-body
+{
+    display:flex;
+    justify-content:space-around;
+    font-family: 'Bebas Neue', 'Helvetica';
+    box-shadow: 0px 3px 10px lightgrey;
+    overflow: hidden;
+    min-height: var(--min-height);
+}
+
+.title-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    cursor: pointer;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-color);
+}
+
+.title > p
+{
+    white-space: nowrap;
+}
+
+#primary-title
+{
+    font-size: 32px;
+}
+
+#secondary-title
+{
+    font-size: 28px;
+}
+
+.title-icon
+{
+    max-height: var(--max-height);
+}
+
+.drop-down
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 5px;
+}
+
+.drop-down > .bars
+{
+    display: none;
+}
+
+.bars
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bar
+{
+    width: 1em;
+    height: 0.1em;
+    background-color: black;
+}
+
+.bar-1
+{
+    position: relative;
+    top: -2.5px;
+}
+
+.bar-2
+{
+    position: relative;
+    top: 0px;
+}
+
+.bar-3
+{
+    position: relative;
+    top: 2.5px;
+}
+
+.phone-icon
+{
+    width: 1em;
+    height: 1em;
+    display: none;
+    cursor: pointer;
+    color: brown;
+}
+
+.phone-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    margin-right: 5px;
+}
+
+.contact-numbers > ul
+{
+    list-style-type: none;
+    text-align: right;
+}
+
+.contact-numbers > ul > li
+{
+    color: var(--tel-text);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#contact-pointer:hover,
+#contact-pointer:focus
+{
+    color: var(--tel-highlightes-text);
+}
+
+@media(max-width: 600px)
+{
+    .phone-icon{
+        display: block;
+    }
+
+    .contact-numbers{
+        display: none;
+    }
+
+    .drop-down > .bars
+    {
+        display: block;
+    }
+
+    #primary-title
+    {
+        font-size: 24px;
+    }
+
+    #secondary-title
+    {
+        font-size: 20px;
+    }
+
+}

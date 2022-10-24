@@ -4,9 +4,6 @@ import icon from './media/icon.svg'
 
 import './css/contact.css';
 
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.REACT_APP_SENDGRID_KEY);
-
 function Contact() {
   const [email, setEmail] = useState({'name': '', 'email': '', 'phone': '', 'address': '', 'onRoad': '', 'message': ''});
 

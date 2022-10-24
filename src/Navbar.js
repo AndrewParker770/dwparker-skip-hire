@@ -1,6 +1,7 @@
 import './css/navbar.css'
 import phoneIcon from './media/phone.png'
 import icon from './media/icon.svg'
+import React from 'react'
 
 function Navbar() {
   const phone_number = "01294 463 597";

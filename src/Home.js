@@ -7,7 +7,7 @@ function Home() {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum sunt veniam quos iure omnis magni magnam animi. Perspiciatis quaerat possimus corrupti illo voluptas eligendi unde saepe odio cumque ut?
       </p>
       <p>
-        {process.env.EXAMPLE}
+        {process.env.REACT_APP_EXAMPLE}
       </p>
     </div>
   );

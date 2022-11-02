@@ -5,7 +5,7 @@ import React from 'react'
 
 function Navbar() {
   const phone_number = "01294 463 597";
-  const email = "info@dwparkerskiphireayrshire.co.uk";
+  const email = "info@dwparkerskiphire.co.uk";
 
   return (
     <div className="navbar-body">

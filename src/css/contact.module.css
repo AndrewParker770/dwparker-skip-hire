@@ -16,7 +16,7 @@ input, button
     padding-left: 5px;
 }
 
-input, textarea, button
+input, textarea
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -87,8 +87,15 @@ h1
     width: 90%;
 }
 
-.formElement, button
+.formElement
 {
+    height: 40px;
+}
+
+button
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     height: 40px;
 }
 

@@ -27,7 +27,7 @@ function Home() {
         <img className={homeCSS.socialImage}/>
       </div>
       <div className={homeCSS.contactPanel}>
-        <h2></h2>
+        <h2>Looking for skip hire in Ayrshire? For specialised waste management solutions to professional or domestic needs, contact us at: </h2>
         <h2><span className={homeCSS.contactPanelBold}>01294 463 597</span> or <span className={homeCSS.contactPanelBold}>07770 563 078</span></h2>
       </div>
     </div>

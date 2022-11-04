@@ -1,0 +1,146 @@
+:root
+{
+    --max-height: 85px;
+    --min-height: 75px;
+
+    --title-color:rgb(207,51,65);
+    --regular-text: rgb(36, 35, 35);
+
+    --sign-colour-blue: rgb(8,37,182);
+    --sign-colour-yellow: rgb(255,191,64);
+    --sign-colour-red: rgb(207,51,65);
+
+    --alter-background: rgb(241,241,241);
+}
+
+.homePageDiv
+{
+    margin-top: 90px;
+}
+
+.introDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.headerTitle
+{
+    color: var(--title-color);
+    font-family: 'Helvetica';
+    text-align: center;
+}
+
+.iconStyle
+{
+    margin-top: 1em;
+    width: 1.5em;
+    background-color: white;
+
+}
+
+.headerCard
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: var(--regular-text);
+    max-width: 900px;
+}
+
+.socialDiv
+{
+    display: flex;
+    justify-content: left;
+    background-color: var(--alter-background);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+}
+
+.socialContainer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 600px;
+}
+
+.socialButtons
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.socialIconStyle
+{
+    width: 3em;
+}
+
+.socialTitle
+{
+    color: var(--regular-text);
+}
+
+.socialHighlight
+{
+    font-weight: 900;
+    color: var(--sign-colour-blue);
+}
+
+.socialParagraph
+{
+    font-size: 14px;
+}
+
+.socialImage
+{
+    display: none;
+}
+
+@media (min-width: 600px)
+{
+    .socialImage
+    {
+        display: block;
+    }
+
+    .socialDiv
+    {
+        justify-content: center;
+    }
+}
+
+.contactPanel
+{
+    background-color: var(--sign-colour-red);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactPanel > h2
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 900px;
+    font-weight: 100;
+}
+
+.contactPanelBold
+{
+    font-weight: 900;
+}
+

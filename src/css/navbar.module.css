@@ -8,9 +8,9 @@
     --sign-colour-yellow: rgb(255,191,64);
     --sign-colour-red: rgb(207,51,65);
 
-    --backgorund-colour: white;
+    --background-colour: white;
 
-    --max-height: 85px;
+    --max-height: 90px;
     --min-height: 75px;
 }
 
@@ -20,17 +20,23 @@ a
     color: inherit;
 }
 
-.navbar-body
+.navbarBody
 {
     display:flex;
     justify-content:space-around;
     font-family: 'Bebas Neue', 'Helvetica';
     box-shadow: 0px 3px 10px lightgrey;
     overflow: hidden;
-    min-height: var(--min-height);
+    height: var(--max-height);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: height;
+    background-color: var(--background-colour);
 }
 
-.title-container
+.titleContainer
 {
     display: flex;
     justify-content: center;
@@ -53,22 +59,22 @@ a
     white-space: nowrap;
 }
 
-#primary-title
+#primaryTitle
 {
     font-size: 32px;
 }
 
-#secondary-title
+#secondaryTitle
 {
     font-size: 28px;
 }
 
-.title-icon
+.titleIcon
 {
     max-height: var(--max-height);
 }
 
-.drop-down
+.dropDown
 {
     display: flex;
     justify-content: center;
@@ -78,7 +84,7 @@ a
     margin-left: 5px;
 }
 
-.drop-down > .bars
+.dropDown > .bars
 {
     display: none;
 }
@@ -99,25 +105,25 @@ a
     background-color: black;
 }
 
-.bar-1
+.bar1
 {
     position: relative;
     top: -2.5px;
 }
 
-.bar-2
+.bar2
 {
     position: relative;
     top: 0px;
 }
 
-.bar-3
+.bar3
 {
     position: relative;
     top: 2.5px;
 }
 
-.phone-icon
+.phoneIcon
 {
     width: 1em;
     height: 1em;
@@ -126,7 +132,7 @@ a
     color: brown;
 }
 
-.phone-div
+.phoneDiv
 {
     display: flex;
     flex-direction: row;
@@ -136,46 +142,46 @@ a
     margin-right: 5px;
 }
 
-.contact-numbers > ul
+.contactNumbers > ul
 {
     list-style-type: none;
     text-align: right;
 }
 
-.contact-numbers > ul > li
+.contactNumbers > ul > li
 {
     color: var(--tel-text);
     text-decoration: underline;
     cursor: pointer;
 }
 
-#contact-pointer:hover,
-#contact-pointer:focus
+#contactPointer:hover,
+#contactPointer:focus
 {
     color: var(--tel-highlightes-text);
 }
 
 @media(max-width: 600px)
 {
-    .phone-icon{
+    .phoneIcon{
         display: block;
     }
 
-    .contact-numbers{
+    .contactNumbers{
         display: none;
     }
 
-    .drop-down > .bars
+    .dropDown > .bars
     {
-        display: block;
+        display: none;
     }
 
-    #primary-title
+    #primaryTitle
     {
         font-size: 24px;
     }
 
-    #secondary-title
+    #secondaryTitle
     {
         font-size: 20px;
     }

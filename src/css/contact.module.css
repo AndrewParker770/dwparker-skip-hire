@@ -97,6 +97,7 @@ button
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     height: 40px;
+    color: black;
 }
 
 .messageFormElement

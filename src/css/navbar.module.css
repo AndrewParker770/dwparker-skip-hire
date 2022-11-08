@@ -10,7 +10,9 @@
 
     --background-colour: white;
 
-    --max-height: 90px;
+    --header-height: 75px;
+
+    --max-height: 100px;
     --min-height: 75px;
 }
 
@@ -27,12 +29,11 @@ a
     font-family: 'Bebas Neue', 'Helvetica';
     box-shadow: 0px 3px 10px lightgrey;
     overflow: hidden;
-    height: var(--max-height);
+    height: var(--header-height);
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    transition: height;
     background-color: var(--background-colour);
 }
 
@@ -71,7 +72,7 @@ a
 
 .titleIcon
 {
-    max-height: var(--max-height);
+    max-height: var(--header-height);
 }
 
 .dropDown
@@ -186,4 +187,19 @@ a
         font-size: 20px;
     }
 
+}
+
+.navbarBody, #headerBlock
+{
+    transition: height 0.4s ease;
+}
+
+img
+{
+    -webkit-transition: all 0.4s ease;
+}
+
+#headerBlock
+{
+    height: var(--header-height);
 }

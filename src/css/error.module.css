@@ -1,0 +1,39 @@
+.errorOuterBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.errorBody{
+    color: black;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.errorBody > h1{
+    color: inherit;
+    padding-top: 20px;
+}
+
+.errorBody > p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeLink{
+    color: blue;
+}
+
+.homeLink:hover{
+    color: rgb(48, 48, 184);
+}
+
+.errorBody > ul {
+    padding-left: 30px;
+}
+

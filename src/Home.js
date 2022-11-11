@@ -24,7 +24,6 @@ function Home() {
           </div>
           <p className={homeCSS.socialParagraph}>Follow us to get an insight into our day-to-day operations with regular updates from our team. Leave a like or write a review to help us improve our services.</p>
         </div>
-        <img className={homeCSS.socialImage}/>
       </div>
       <div className={homeCSS.contactPanel}>
         <h2>Looking for skip hire in Ayrshire? For specialised waste management solutions to professional or domestic needs, contact us at: </h2>

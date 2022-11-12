@@ -1,4 +1,4 @@
-import errorCSS from './css/error.module.css'
+import errorCSS from '../css/error.module.css'
 
 import {Link} from "react-router-dom";
 

@@ -10,10 +10,10 @@
 
     --background-colour: white;
 
-    --header-height: 75px;
+    --header-height: 90px;
 
-    --max-height: 100px;
-    --min-height: 75px;
+    --max-height: 110px;
+    --min-height: 90px;
 }
 
 a
@@ -32,9 +32,10 @@ a
     height: var(--header-height);
     position: fixed;
     left: 0;
-    top: 0;
+    top: -0.5%;
     right: 0;
     background-color: var(--background-colour);
+    z-index: 1;
 }
 
 .titleContainer
@@ -43,7 +44,6 @@ a
     justify-content: center;
     align-items: center;
     flex: 2;
-    cursor: pointer;
 }
 
 .title
@@ -164,6 +164,12 @@ a
 
 @media(max-width: 600px)
 {
+    :root{
+        --header-height: 75px;
+        --max-height: 100px;
+        --min-height: 75px;
+    }
+
     .phoneIcon{
         display: block;
     }

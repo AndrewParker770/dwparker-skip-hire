@@ -75,53 +75,25 @@ a
     max-height: var(--header-height);
 }
 
-.dropDown
-{
+.dropDown{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex: 1;
-    margin-left: 5px;
+    justify-content: center;
+    flex:1;
 }
 
-.dropDown > .bars
+.navIcon
 {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    color: brown;
     display: none;
 }
 
-.bars
-{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    cursor: pointer;
-}
-
-.bar
-{
-    width: 1em;
-    height: 0.1em;
-    background-color: black;
-}
-
-.bar1
-{
-    position: relative;
-    top: -2.5px;
-}
-
-.bar2
-{
-    position: relative;
-    top: 0px;
-}
-
-.bar3
-{
-    position: relative;
-    top: 2.5px;
+#invisible{
+    width: 0;
+    height: 0;
 }
 
 .phoneIcon
@@ -178,11 +150,6 @@ a
         display: none;
     }
 
-    .dropDown > .bars
-    {
-        display: none;
-    }
-
     #primaryTitle
     {
         font-size: 24px;
@@ -191,6 +158,10 @@ a
     #secondaryTitle
     {
         font-size: 20px;
+    }
+
+    .navIcon{
+        display: block;
     }
 
 }

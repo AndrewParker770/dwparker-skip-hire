@@ -1,7 +1,10 @@
 import navbarCSS from './css/navbar.module.css'
 import phoneIcon from './media/phone.png'
 import icon from './media/icon.svg'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState, componentDidMount } from 'react'
+
+import cross from './media/x_icon.svg';
+import nav from './media/navigation_icon.svg';
 
 function Navbar() {
   const phone_number = "01294 463 597";
@@ -9,6 +12,8 @@ function Navbar() {
 
   const min_height = getComputedStyle(document.documentElement).getPropertyValue('--min-height');
   const max_height = getComputedStyle(document.documentElement).getPropertyValue('--max-height');
+
+  const [isNavActive, setIsNavActive] = useState(true);
     
 
   function setHeaderHeight(height){
@@ -33,21 +38,14 @@ function Navbar() {
       // eslint-disable-next-line
   }, []);
 
+  // id={`navbarCSS.${isNavActive ? '': 'invisible'}`}
+
   return (
     <div>
       <div className={navbarCSS.navbarBody}>
         <div className={navbarCSS.dropDown}>
-          <div className={navbarCSS.bars}>
-            <div className={`${navbarCSS.bar1} ${navbarCSS.bar}`}>
-
-            </div>
-            <div className={`${navbarCSS.bar2} ${navbarCSS.bar}`}>
-
-            </div>
-            <div className={`${navbarCSS.bar3} ${navbarCSS.bar}`}>
-
-            </div>
-          </div>
+          <img style={isNavActive ? {width: "1.5em", height: "1.5em" }: {width: "0em", height: "0em"}} className={navbarCSS.navIcon} src={nav} alt="navbar icon" onClick={() => isNavActive ? setIsNavActive(false) : setIsNavActive(true)}/>
+          <img style={isNavActive ? {width: "0em", height: "0em"}: {width: "1.5em", height: "1.5em"}} className={navbarCSS.navIcon} src={cross} alt="navbar cancellation icon" onClick={() => isNavActive ? setIsNavActive(false) : setIsNavActive(true)}/>
         </div>
 
         <div className={navbarCSS.titleContainer}>

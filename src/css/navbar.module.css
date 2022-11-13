@@ -14,6 +14,13 @@
 
     --max-height: 110px;
     --min-height: 90px;
+
+    --navbar-translate: -100%;
+
+    --wide-nav-height: 0px;
+ 
+    --overflow-var: auto;
+    overflow: var(--overflow-var);
 }
 
 a
@@ -27,7 +34,6 @@ a
     display:flex;
     justify-content:space-around;
     font-family: 'Bebas Neue', 'Helvetica';
-    box-shadow: 0px 3px 10px lightgrey;
     overflow: hidden;
     height: var(--header-height);
     position: fixed;
@@ -35,7 +41,7 @@ a
     top: -0.5%;
     right: 0;
     background-color: var(--background-colour);
-    z-index: 1;
+    z-index: 2;
 }
 
 .titleContainer
@@ -164,6 +170,10 @@ a
         display: block;
     }
 
+    .wideLinkBody{
+        display: none;
+    }
+
 }
 
 .navbarBody, #headerBlock
@@ -174,9 +184,73 @@ a
 img
 {
     -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 #headerBlock
 {
-    height: var(--header-height);
+    height: calc(var(--header-height) + var(--wide-nav-height) - 5px);
+}
+
+.mobileLinkBody{
+    display: none;
+    position: fixed;
+    top: calc(var(--header-height) - 5px);
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: white;
+    transition: tranform 1s ease-in-out;
+    transform: translateY(var(--navbar-translate));
+}
+
+.mobileLinkContainer{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 1em;
+}
+
+.mobileLinkText{
+    font-family: 'Bebas Neue', 'Helvetica';
+    min-height: 2.5em;
+    width: 50%;
+    box-shadow: 0px 3px 10px lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wideLinkBody{
+    position: fixed;
+    top: calc(var(--header-height) - 5px);
+    left: 0;
+    right: 0;
+    background-color: var(--sign-colour-blue);
+    color: white;
+    white-space: nowrap;    
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.wideLinkContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+
+    justify-content: center;
+}
+
+.wideLinkText{
+    display: flex;
+    justify-content: flex-start;
 }

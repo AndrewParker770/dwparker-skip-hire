@@ -25,7 +25,7 @@ const useSize = (target) => {
 function Navbar() {
 
   const headerTarget = React.useRef(null);
-  const headerSize = useSize(headerTarget)
+  const headerSize = useSize(headerTarget);
   if (headerSize){
     document.documentElement.style.setProperty('--wide-nav-height', headerSize.height + "px")
   };

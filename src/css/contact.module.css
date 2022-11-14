@@ -62,16 +62,24 @@ h1
 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1em;
 }
 
 .overflowFormElement
 {
     height: 30px;
-    flex: 1;
 }
 
+@media(min-width: 600px){
+    .overflowFormDiv{
+        flex-direction: row;
+    }
+
+    .overflowFormElement{
+        flex: 1;
+    }
+}
   
 
 .formLayout
@@ -119,5 +127,14 @@ button
     width: 1.5em;
     background-color: white;
     border-radius: 50%;
+}
+
+.ReCAPTCHAElem{
+    align-self: center;
+}
+
+.disabledButton{
+    cursor: not-allowed;
+    color: grey;
 }
 

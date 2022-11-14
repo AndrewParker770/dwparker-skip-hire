@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState} from 'react';
 
 import icon from './media/icon.svg'
 import contactCSS from'./css/contact.module.css';
@@ -8,23 +9,39 @@ import contactCSS from'./css/contact.module.css';
 function Contact() {
 
   const form = useRef();
+  const captchaRef = useRef();
+
+  const [disabled, setDisabled] = useState(true);
 
   function sendEmail(e)
   {
     e.preventDefault();
+
+    //form.current.style.display = 'none';
     
-    
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+    if(form.current["g-recaptcha-response"] === null){
+      console.log(form.current["g-recaptcha-response"]);
+    }else{
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
+          if(result.text === "OK"){console.log("Exact Match")}
       }, (error) => {
           console.log(error.text);
       });
     
-
      form.current.reset();
+    }
   }
 
+  function handleChange(){
+    if (captchaRef.current.getValue() === ''){
+      setDisabled(true);
+    }else{
+      setDisabled(false);
+    }
+  }
+  
   return (
     <div className={contactCSS.contactDiv}>
       <h1>Contact Us:</h1>
@@ -39,7 +56,8 @@ function Contact() {
         </div>
         <textarea name="customer_address" className={`${contactCSS.formElement} ${contactCSS.messageFormElement}`} placeholder='Address *' type="text" required />
         <textarea name="customer_message" className={`${contactCSS.formElement} ${contactCSS.messageFormElement}`} placeholder='Message *' type="text" required />
-        <button type='submit'>Submit</button>
+        <button type='submit' style={disabled ? {color: "gray", cursor: "not-allowed"}: {cursor: "pointer"}} disabled={disabled}>Submit</button>
+        <ReCAPTCHA ref={captchaRef} name="g-recaptcha-response" sitekey={process.env.REACT_APP_RECAPTCHA_SITE} className={contactCSS.ReCAPTCHAElem} onChange={handleChange}/>
       </form>
       <h2 id={contactCSS.submittionIndicator}>E-mail Sent</h2>
       <img className={contactCSS.iconStyle} src={icon} alt="logo of DWP"/>

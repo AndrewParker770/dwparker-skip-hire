@@ -113,14 +113,22 @@ function Navbar() {
       </div>
       <div className={navbarCSS.mobileLinkBody} style={isNavActive? {display: "block"}: {display: "none"}}>
         <div className={navbarCSS.mobileLinkContainer}>
-          <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/" onClick={disableNav}>Our Homepage</Link>
+          <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/" onClick={disableNav}>Home</Link>
+          <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/available-skips" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/available-skips" onClick={disableNav}>Available Skips</Link>
+          <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/waste-management" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/waste-management" onClick={disableNav}>Waste Management</Link>
+          <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/recycled-materials" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/recycled-materials" onClick={disableNav}>Recycled Materials</Link>
+          <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/our-team" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/our-team" onClick={disableNav}>Our Team</Link>
           <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/contact" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/contact" onClick={disableNav}>Contact US</Link>
           <Link className={navbarCSS.mobileLinkText} style={location.pathname === "/faq" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/faq" onClick={disableNav}>FAQ</Link>
         </div>
       </div>
       <div className={navbarCSS.wideLinkBody} ref={headerTarget}>
         <div className={navbarCSS.wideLinkContainer}>
-          <Link className={navbarCSS.wideLinkText} style={location.pathname === "/" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/">Our Homepage</Link>
+          <Link className={navbarCSS.wideLinkText} style={location.pathname === "/" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/">Home</Link>
+          <Link className={navbarCSS.wideLinkText} style={location.pathname === "/available-skips" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/available-skips">Available Skips</Link>
+          <Link className={navbarCSS.wideLinkText} style={location.pathname === "/waste-management" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/waste-management">Waste Management</Link>
+          <Link className={navbarCSS.wideLinkText} style={location.pathname === "/recycled-materials" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/recycled-materials">Recycled Materials</Link>
+          <Link className={navbarCSS.wideLinkText} style={location.pathname === "/our-team" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/our-team">Our Team</Link>
           <Link className={navbarCSS.wideLinkText} style={location.pathname === "/contact" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/contact">Contact US</Link>
           <Link className={navbarCSS.wideLinkText} style={location.pathname === "/faq" ? {textDecoration: "underline"} : {textDecoration: "none"}} to="/faq">FAQ</Link>
         </div>

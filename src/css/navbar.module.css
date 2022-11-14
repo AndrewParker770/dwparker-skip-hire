@@ -134,6 +134,10 @@ a
     cursor: pointer;
 }
 
+#contactPointer{
+    font-size: 18px;
+}
+
 #contactPointer:hover,
 #contactPointer:focus
 {
@@ -179,7 +183,7 @@ img
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .mobileLinkText{
@@ -219,7 +223,7 @@ img
 .wideLinkContainer{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 1.5em;
     padding: 10px;
     justify-content: center;
 }
@@ -273,6 +277,11 @@ img
 
     .wideLinkBody{
         display: none;
+    }
+
+    #headerBlock
+    {
+        height: calc(var(--header-height) - 5px);
     }
 
 }

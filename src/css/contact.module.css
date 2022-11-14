@@ -62,13 +62,14 @@ h1
 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1em;
 }
 
 .overflowFormElement
 {
     height: 30px;
+    flex: 1;
 }
 
   
@@ -118,21 +119,5 @@ button
     width: 1.5em;
     background-color: white;
     border-radius: 50%;
-}
-
-@media (min-width: 800px)
-{
-    .overflowFormDiv
-    {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .overflowFormElement
-    {
-        flex:1;
-    }
-
 }
 

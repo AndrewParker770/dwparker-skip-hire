@@ -2,10 +2,16 @@ import teamCss from '../css/team.module.css';
 
 import icon from '../media/icon.svg';
 
+import image3 from '../images/photo3.jpg';
+
 export default function Team(){
-    
+
+    //<img className={teamCss.headImage} src={image3} alt="logo of DWP"/>
     return(
         <div>
+            <div className={teamCss.headImageContainer}>
+                 <img className={teamCss.headImage} src={image3} alt="logo of DWP"/>
+            </div>
             <div className={teamCss.headerContainer}>
                 <div className={teamCss.headerDiv}>
                     <img className={teamCss.iconStyle} src={icon} alt="logo of DWP"/>

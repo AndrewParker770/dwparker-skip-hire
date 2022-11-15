@@ -1,3 +1,20 @@
+.headImageContainer{
+    max-height: 200px;
+    aspect-ratio: 1/2;
+    width: 100%;
+    background-color: gray;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.headImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 60%;
+}
+
 .iconStyle{
     width: 1.5em;
     background-color: transparent;
@@ -30,4 +47,24 @@
     font-family: 'Open Sans', sans-serif;
     color: var(--body-text-colour);
     width: 80%;
+}
+
+@media (min-width: 600px){
+    .headImageContainer{
+        max-height: 300px;
+    }
+
+    .headImage{
+        object-position: 100% 50%;
+    }
+
+    .headerDiv{
+        transform: translateY(-50px);
+    }
+}
+
+@media (min-width: 900px){
+    .headImage{
+        object-position: 100% 60%;
+    }
 }

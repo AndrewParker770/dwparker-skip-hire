@@ -1,0 +1,170 @@
+:root{
+    --alter-background: rgb(241,241,241);
+    --body-text-colour: rgb(75,75,75);
+
+    --sign-colour-blue: rgb(8,37,182);
+    --sign-colour-yellow: rgb(255,191,64);
+    --sign-colour-red: rgb(207,51,65);
+}
+
+.headImageContainer{
+    max-height: 200px;
+    aspect-ratio: 1.7/1;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: var(--alter-background);
+
+    position: relative;
+}
+
+.headImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 60%;
+}
+
+.iconStyle{
+    width: 1.5em;
+    background-color: transparent;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    gap: 15px;
+    background-color: white;
+    max-width: 1000px;
+    -webkit-border-radius: 25px;
+}
+
+.headerDiv > h1{
+    color: var(--title-color);
+}
+
+.headerDiv > p{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--body-text-colour);
+    width: 80%;
+}
+
+@media (min-width: 600px){
+    
+    .headerDiv{
+        transform: translateY(-50px);
+    }
+}
+
+.introductionDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--alter-background);
+}
+
+.introductionDiv > h2, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introductionDiv > h2{
+    padding-bottom: 0.5em;
+}
+
+.introductionDiv > p{
+    font-size: 14px;
+    color: var(--body-text-colour);
+    padding-top: 0.5em;
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 0.5em;
+    text-align: center;
+}
+
+.outerPanelDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2em;
+}
+
+.panelDiv{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+    row-gap: 2em;
+
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.panel{
+    box-shadow: 0px 1px 10px rgb(159, 153, 153);
+    width: 30%;
+    min-width: 300px;
+    border-radius: 5%;
+
+    overflow: hidden;
+}
+
+.panelImg{
+    background-color: lightgrey;
+    aspect-ratio: 1.8 /1;
+
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.panelText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    height: 100%;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.panelText > h3, p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.panelText > ul{
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-self: center;
+    color: white;
+}
+
+#panel1{
+    background-color: var(--sign-colour-blue);
+}
+
+#panel2{
+    background-color: var(--sign-colour-yellow);
+}
+
+#panel3{
+    background-color: var(--sign-colour-red);
+}
+

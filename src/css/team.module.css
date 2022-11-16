@@ -1,8 +1,12 @@
+:root{
+    --alter-background: rgb(241,241,241);
+    --body-text-colour: rgb(75,75,75);
+}
+
 .headImageContainer{
     max-height: 200px;
     aspect-ratio: 1/2;
     width: 100%;
-    background-color: gray;
     overflow: hidden;
 
     position: relative;
@@ -24,6 +28,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-height: 100px;
 }
 
 .headerDiv{
@@ -37,6 +43,7 @@
     background-color: white;
     max-width: 1000px;
     -webkit-border-radius: 25px;
+    max-height: 100px;
 }
 
 .headerDiv > h1{
@@ -60,11 +67,108 @@
 
     .headerDiv{
         transform: translateY(-50px);
+        padding-top: 2.5em;
+    }
+
+    .headerContainer{
+        max-height: 70px;
     }
 }
 
 @media (min-width: 900px){
     .headImage{
         object-position: 100% 60%;
+    }
+}
+
+
+
+
+.introductionDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    padding-top: 0em;
+}
+
+.introductionDiv > h2, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introductionDiv > h2{
+    padding-bottom: 0.5em;
+}
+
+.introductionDiv > p{
+    font-size: 14px;
+    color: var(--body-text-colour);
+    padding-top: 0.5em;
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 0.5em;
+    text-align: center;
+}
+
+.outerPanelDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2em;
+}
+
+.panelDiv{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+    row-gap: 2em;
+
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.panel{
+    box-shadow: 0px 1px 10px rgb(159, 153, 153);
+    width: 30%;
+    min-width: 300px;
+    border-radius: 5%;
+}
+
+.panelImg{
+    background-color: lightgrey;
+    aspect-ratio: 1.8 /1;
+
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.panelText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.panelText > h3, p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 650px)
+{
+    .panelDiv{
+        grid-template-columns: 1fr;
     }
 }

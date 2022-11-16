@@ -181,11 +181,13 @@ img
     background-color: transparent;
     
     padding-top: 2.5em;
+    padding-bottom: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
     gap: 1.5em;
+    overflow: scroll;
 }
 
 .mobileLinkText{

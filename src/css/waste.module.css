@@ -130,10 +130,9 @@
     gap: 0.5em;
     height: 100%;
 
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 2em;
     padding-top: 1em;
-    padding-bottom: 2em;
+    color: white;
 }
 
 .panelText > h3, p{
@@ -150,24 +149,16 @@
     
 }
 
-#panel1{
+.panel:nth-child(3n-2) > .panelText{
     background-color: var(--sign-colour-blue);
-    color: white;
 }
 
-#panel2{
+.panel:nth-child(3n-1) > .panelText{
     background-color: var(--sign-colour-yellow);
-    color: white;
 }
 
-#panel3{
+.panel:nth-child(3n) > .panelText{
     background-color: var(--sign-colour-red);
-    color: white;
-}
-
-#panel4{
-    background-color: var(--sign-colour-blue);
-    color: white;
 }
 
 @media(max-width: 1000px){
@@ -179,8 +170,8 @@
 .contactPanel
 {
     background-color: var(--sign-colour-red);
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,0 +1,65 @@
+:root
+{
+    --title-color:rgb(207,51,65);
+    --regular-text: rgb(36, 35, 35);
+
+    --sign-colour-blue: rgb(8,37,182);
+    --sign-colour-yellow: rgb(255,191,64);
+    --sign-colour-red: rgb(207,51,65);
+
+    --alter-background: rgb(241,241,241);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactPanel
+{
+    background-color: var(--sign-colour-red);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactPanel > h2
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 900px;
+    font-weight: 100;
+}
+
+.contactPanelBold
+{
+    font-weight: 900;
+}

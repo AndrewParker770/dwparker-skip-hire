@@ -6,6 +6,7 @@ import icon from './media/icon.svg'
 
 import facebook from './media/facebookIcon.svg'
 import instagram from './media/instaIcon.svg'
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function Home() {
             <div className={homeCSS.panelText}>
               <h3>Waste management services</h3>
               <p>For professional waste management services, contact D.W Parker Skip Hire.</p>
+              <Link className={homeCSS.panelLink} to="/waste-management">Waste management services</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -44,6 +46,7 @@ function Home() {
             <div className={homeCSS.panelText}>
               <h3>Environmentally friendly recycling</h3>
               <p>For environmentally recycling in Ayrshire, call D.W Parker Skip Hire.</p>
+              <Link className={homeCSS.panelLink} to="/recycled-materials">Environmentally friendly recycling</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -53,6 +56,7 @@ function Home() {
             <div className={homeCSS.panelText}>
                 <h3>Rubbish disposal</h3>
                 <p>For expert skip hire and waste disposal for your domestic or commercial property in Ayrshire, D.W Parker offer an honest, reliable service and expert advice.</p>
+                <Link className={homeCSS.panelLink} to="/waste-management">Rubbish disposal</Link>
             </div>
           </div>
         </div>
@@ -71,6 +75,7 @@ function Home() {
             <div className={homeCSS.panelText}>
               <h3>Skips in all sizes</h3>
               <p>We supply a wide range of skip sizes that are perfect for both domestic and commercial use. Our experts can advise you of the best skip for your requirements.</p>
+              <Link className={homeCSS.panelLink} to="/available-skips">Skip hire</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -80,6 +85,7 @@ function Home() {
             <div className={homeCSS.panelText}>
               <h3>Household waste removal experts</h3>
               <p>At D.W Parker Skip Hire we are proud to be SEPA registered and approved waste carriers. We can expertly remove waste materials and aim to recycle the majority of the materials we collect.</p>
+              <Link className={homeCSS.panelLink} to="/waste-management">Waste management</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -89,6 +95,7 @@ function Home() {
             <div className={homeCSS.panelText}>
               <h3>Local services for you</h3>
               <p>We are a local, family run business based in Ayrshire. We can deliver skips, recycle materials and collect waste from you in Ardrossan, Ayr, Kilmarnock and Ayrshire areas.</p>
+              <Link className={homeCSS.panelLink} to="/contact">Contact Us</Link>
             </div>
           </div>
         </div>

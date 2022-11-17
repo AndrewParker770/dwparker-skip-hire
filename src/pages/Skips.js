@@ -25,6 +25,103 @@ export default function Skips(){
                 <h2>To find out more about our skip hire services and for advice on the best skip size for your disposal needs contact D.W Parker Skip Hire today</h2>
                 <h2><span className={skipsCss.contactPanelBold}>01294 463 597</span> or <span className={skipsCss.contactPanelBold}>07770 563 078</span></h2>
             </div>
+            <div className={skipsCss.outerPanelDiv}>
+                <div className={skipsCss.panelDiv}>
+                    <div className={skipsCss.panel}>
+                        <div className={skipsCss.panelImg}>
+                            
+                        </div>  
+                        <div className={skipsCss.panelText} id={skipsCss.panel1}>
+                            <h3>Skip hire to suit your needs</h3>
+                            <p>Our prices are based on a 7 day hire but if you are looking for a longer term arrangement contact us and we will see what we can do to help.</p>
+                        </div>
+                    </div>
+                    <div className={skipsCss.panel}>
+                        <div className={skipsCss.panelImg}>
+
+                        </div>  
+                        <div className={skipsCss.panelText} id={skipsCss.panel2}>
+                            <h3>Skip sizes to suit all properties</h3>
+                            <p>At D.W Parker Skip Hire we stock a wide range of skips that are suitable for needs of all sizes. Our skips are suitable for anything from small, house clearances to large scale building site waste disposal. We stock both midi and maxi skips and our experts are available to give advice on the best skip for your needs. We supply skips of all sizes from 4, 6, 8, 12 and 16 standard skips to 15, 20 and 40 cubic yard ROLO options.</p>
+                        </div>
+                    </div>
+                    <div className={skipsCss.panel} id={skipsCss.panel3}>
+                        <div className={skipsCss.panelImg}>
+
+                        </div>  
+                        <div className={skipsCss.panelText}>
+                            <h3>What we offer</h3>
+                            <p>At D.W Parker Skip Hire we stock a wide range of skips that are suitable for needs of all sizes. Our skips are suitable for anything from small, house clearances to large scale building site waste disposal. We stock both midi and maxi skips and our experts are available to give advice on the best skip for your needs. We supply skips of all sizes from 4, 6, 8, 12 and 16 standard skips to 15, 20 and 40 cubic yard ROLO options.</p>
+                        </div>
+                    </div>
+                    <div className={skipsCss.panel} id={skipsCss.panel4}>
+                        <div className={skipsCss.panelImg}>
+
+                        </div>  
+                        <div className={skipsCss.panelText}>
+                        <h3>Skip the hassle</h3>
+                            <ul>
+                                <li>Difficult access service</li>
+                                <li>Wait and load service</li>
+                                <li>Commercial skip hire</li>
+                                <li>Domestic skip hire</li>
+                                <li>Roll on/roll off skip hire</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={skipsCss.outerSkipInfo}>
+                <div className={skipsCss.infoContainer}>
+                    <div className={skipsCss.skipInfo}>
+                        <h4>4 Yard Skip</h4>
+                        <p>4 yard skip also known as the midi skip. The dimensions are approximately 7 ft in length x 5 ft in width x 4 ft in height. These skips can hold your domestic waste up to 4 tones or 40 to 50 black bin bags. Besides these, they can hold 15 to 18 wheelbarrows.</p>
+                    </div>
+                    <div className={skipsCss.skipInfo}>
+                        <h4>8 Yard Skip</h4>
+                        <p>8 yard skip known as a builders skips. 8 yard skips can carry a moderate amount of waste from your kitchen or bathroom. These skips can hold eight tones of waste and 60-70 black bin bags. The dimensions of 8 yard skips are 12 ft length x 6 ft width x 4.5 ft height.</p>
+                    </div>
+                    <div className={skipsCss.skipInfo}>
+                        <h4>12 Yard Skip</h4>
+                        <p>12 yard skips are best for industrial purposes. The skip holds 120 tonnes, or 120 to 130 black bin bags. These skips are handy to get rid of a large amount of waste. The dimensions of these skips are 13 ft length x 6 ft width x 6.5 ft height.</p>
+                    </div>
+                    <div className={skipsCss.skipInfo}>
+                        <h4>15 Yard Bin</h4>
+                        <p>15 yard bin is the best solution for waste removal for more massive house clean ups, destruction, renovations and also used to carry a vast amount of waste from building areas. 15 yard bins can hold 170 to 180 black bin bags and the dimension 13.5 ft length x 6 ft width x 6.5 ft height.</p>
+                    </div>
+                    <div className={skipsCss.skipInfo}>
+                        <h4>20 Yard Bin</h4>
+                        <p>20 yard bins also known as Roll-On & Roll-Off skip. 20 yard bins can carry numerous amounts of waste very quickly where the regular skips are not the excellent. 20 yard skip can hold 220 to 230 black bin bags and the dimensions are approximately 20 ft length x 8 ft width x 4 ft height.</p>
+                    </div>
+                    <div className={skipsCss.skipInfo}>
+                        <h4>40 Yard Bin</h4>
+                        <p>40 yard skip is the largest skip size available in the skip hire industry. These skips can carry numerous amount of rubbish and the best choice for a vast amount of waste removal. 40 yard skip can carry 400 tones or can hold 440 to 450 black bin bags. The dimensions are 20 ft Length x 8 ft Width x 8.5 ft Height.</p>
+                    </div>
+                </div>
+            </div>
+            <div className={skipsCss.skipDisplayDiv}>
+                <div className={skipsCss.skipDisplayElem}>
+                    <div className={skipsCss.skipDisplayTextbox}>
+                        <h3>Open</h3>
+                    </div>
+                </div>
+                <div className={skipsCss.skipDisplayElem}>
+                    <div className={skipsCss.skipDisplayTextbox}>
+                        <h3>Enclosed</h3>
+                    </div>
+                </div>
+                <div className={skipsCss.skipDisplayElem}>
+                    <div className={skipsCss.skipDisplayTextbox}>
+                        <h3>Bins</h3>
+                    </div>
+                </div>
+                <div className={skipsCss.skipDisplayElem}>
+                    <div className={skipsCss.skipDisplayTextbox}>
+                        <h3>Lorries</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

@@ -2,10 +2,13 @@ import wasteCss from '../css/waste.module.css';
 
 import icon from '../media/icon.svg';
 
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
+
 export default function Waste(){
 
     return(
         <div>
+            <ScrollToTopOnMount/>
             <div className={wasteCss.headImageContainer}>
                 
             </div>

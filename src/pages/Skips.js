@@ -1,11 +1,12 @@
-
 import skipsCss from '../css/skips.module.css';
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
 
 export default function Skips(){
     return(
         <div>
+            <ScrollToTopOnMount/>
             <div className={skipsCss.headImageContainer}>
                 
                 </div>

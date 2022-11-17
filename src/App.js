@@ -10,7 +10,6 @@ import Recycle from './pages/Recycle';
 import Waste from './pages/Waste';
 import Skips from './pages/Skips';
 
-import React, { useEffect} from 'react'
 import {Route, Routes} from "react-router-dom";
 
 

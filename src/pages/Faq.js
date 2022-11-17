@@ -1,4 +1,5 @@
 import faqCss from '../css/faq.module.css';
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
 import icon from '../media/icon.svg';
 
 import alarm from '../media/alarm.svg';
@@ -12,6 +13,7 @@ import pie from '../media/pie_chart.svg';
 function Faq(){
     return(
         <div className={faqCss.faqOuter}>
+            <ScrollToTopOnMount/>
             <div className={faqCss.faqHeaderDiv}>
                 <img className={faqCss.iconStyle} src={icon} alt="logo of DWP"/>
                 <h1>Frequently Asked Questions</h1>

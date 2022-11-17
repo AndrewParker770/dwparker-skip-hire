@@ -1,4 +1,5 @@
 import recycleCss from '../css/recycle.module.css';
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
 
@@ -6,6 +7,7 @@ export default function Recycle(){
 
     return(
         <div>
+            <ScrollToTopOnMount/>
             <div className={recycleCss.headImageContainer}>
                  
             </div>

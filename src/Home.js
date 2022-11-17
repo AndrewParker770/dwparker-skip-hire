@@ -1,6 +1,7 @@
 import React from 'react';
 
 import homeCSS from './css/home.module.css'
+import ScrollToTopOnMount from './ScrollToTopOnMount';
 import icon from './media/icon.svg'
 
 import facebook from './media/facebookIcon.svg'
@@ -9,6 +10,7 @@ import instagram from './media/instaIcon.svg'
 function Home() {
   return (
     <div className={homeCSS.homePageDiv}>
+      <ScrollToTopOnMount/>
       <div className={homeCSS.headImageContainer}>
                 
       </div>

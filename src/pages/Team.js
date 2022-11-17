@@ -1,4 +1,5 @@
 import teamCss from '../css/team.module.css';
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
 
@@ -9,6 +10,7 @@ export default function Team(){
     //<img className={teamCss.headImage} src={image3} alt="logo of DWP"/>
     return(
         <div>
+            <ScrollToTopOnMount/>
             <div className={teamCss.headImageContainer}>
                  <img className={teamCss.headImage} src={image3} alt="logo of DWP"/>
             </div>

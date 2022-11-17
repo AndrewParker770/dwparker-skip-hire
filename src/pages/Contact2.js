@@ -1,4 +1,5 @@
-import contactCss from '../css/contactpage.module.css'
+import contactCss from '../css/contactpage.module.css';
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
 
@@ -13,6 +14,7 @@ export default function Contact2(){
 
     return(
         <div className={contactCss.outerDiv}>
+            <ScrollToTopOnMount/>
             <div className={contactCss.mapDiv}>
                 <Map height={275} defaultCenter={[55.67201832294405, -4.8221146418623215]} defaultZoom={12}>
                     <Marker width={50} anchor={[55.67201832294405, -4.8221146418623215]} />

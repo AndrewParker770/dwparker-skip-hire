@@ -145,7 +145,7 @@
 .panelText > h3, p{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: white;
+    
 }
 
 .panelText > ul{
@@ -153,18 +153,21 @@
     padding-left: 1em;
     padding-right: 1em;
     align-self: center;
-    color: white;
+    
 }
 
 #panel1{
     background-color: var(--sign-colour-blue);
+    color: white;
 }
 
 #panel2{
     background-color: var(--sign-colour-yellow);
+    color: white;
 }
 
 #panel3{
     background-color: var(--sign-colour-red);
+    color: white;
 }
 

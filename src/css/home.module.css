@@ -193,7 +193,7 @@
 {
     display: flex;
     flex-direction: row;
-
+    transform: translateX(-5px);
 }
 
 .socialIconStyle
@@ -208,9 +208,14 @@
 
 .socialHighlight
 {
-    font-weight: 900;
+    font-weight: 600;
     color: var(--sign-colour-blue);
     text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.socialHighlight > p{
+    font-weight: 900;
 }
 
 .socialParagraph
@@ -240,12 +245,13 @@
 .contactPanel
 {
     background-color: var(--sign-colour-red);
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+
+    padding: 2em;
 }
 
 .contactPanel > h2

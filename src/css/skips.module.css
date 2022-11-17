@@ -10,6 +10,93 @@
     --alter-background: rgb(241,241,241);
 }
 
+.headImageContainer{
+    max-height: 200px;
+    aspect-ratio: 1.7/1;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: var(--alter-background);
+
+    position: relative;
+}
+
+.headImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 60%;
+}
+
+.iconStyle{
+    width: 1.5em;
+    background-color: transparent;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    gap: 15px;
+    background-color: white;
+    max-width: 1000px;
+    -webkit-border-radius: 25px;
+}
+
+.headerDiv > h1{
+    color: var(--title-color);
+    text-align: center;
+}
+
+.headerDiv > p{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--body-text-colour);
+    width: 80%;
+}
+
+@media (min-width: 600px){
+    
+    .headerDiv{
+        transform: translateY(-50px);
+    }
+}
+
+.introductionDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--alter-background);
+}
+
+.introductionDiv > h2, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introductionDiv > h2{
+    padding-bottom: 0.5em;
+}
+
+.introductionDiv > p{
+    font-size: 14px;
+    color: var(--body-text-colour);
+    padding-top: 0.5em;
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 0.5em;
+    text-align: center;
+}
+
 
 
 
@@ -41,12 +128,12 @@
 .contactPanel
 {
     background-color: var(--sign-colour-red);
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 2em;
 }
 
 .contactPanel > h2

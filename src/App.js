@@ -10,16 +10,17 @@ import Recycle from './pages/Recycle';
 import Waste from './pages/Waste';
 import Skips from './pages/Skips';
 
-
+import React, { useEffect} from 'react'
 import {Route, Routes} from "react-router-dom";
+
 
 function App(){
 
     return(
         <>
             <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Home />} />
+                <Routes onRoute>
+                    <Route path="/" element={<Home />}/>
                     <Route path="/faq" element={<Faq />} />
                     <Route path="/contact" element={<Contact2 />} />
                     <Route path="/our-team" element={<Team />} />

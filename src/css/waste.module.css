@@ -170,12 +170,12 @@
 .contactPanel
 {
     background-color: var(--sign-colour-red);
-    padding-top: 3em;
-    padding-bottom: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 2em;
 }
 
 .contactPanel > h2

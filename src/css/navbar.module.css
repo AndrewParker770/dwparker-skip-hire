@@ -33,7 +33,6 @@ a
 {
     display:flex;
     justify-content:space-around;
-    font-family: 'Bebas Neue', 'Helvetica';
     overflow: hidden;
     height: var(--header-height);
     position: fixed;
@@ -69,11 +68,13 @@ a
 #primaryTitle
 {
     font-size: 32px;
+    font-family: 'Bebas Neue', 'Helvetica';
 }
 
 #secondaryTitle
 {
     font-size: 28px;
+    font-family: 'Bebas Neue', 'Helvetica';
 }
 
 .titleIcon
@@ -119,6 +120,7 @@ a
     align-items: center;
     flex:1;
     margin-right: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contactNumbers > ul

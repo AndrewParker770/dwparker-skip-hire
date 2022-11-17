@@ -60,6 +60,28 @@ export default function Recycle(){
                     </div>
                 </div>
             </div>
+            <div className={recycleCss.materialDiv}>
+                <div className={recycleCss.materialElem}>
+                    <div className={recycleCss.materialTextbox}>
+                        <h3>Soil</h3>
+                    </div>
+                </div>
+                <div className={recycleCss.materialElem}>
+                    <div className={recycleCss.materialTextbox}>
+                        <h3>Whin Dust</h3>
+                    </div>
+                </div>
+                <div className={recycleCss.materialElem}>
+                    <div className={recycleCss.materialTextbox}>
+                        <h3>Type 1</h3>
+                    </div>
+                </div>
+                <div className={recycleCss.materialElem}>
+                    <div className={recycleCss.materialTextbox}>
+                        <h3>Sandstone</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

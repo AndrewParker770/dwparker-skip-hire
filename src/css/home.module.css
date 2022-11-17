@@ -89,11 +89,13 @@
 {
     font-weight: 900;
     color: var(--sign-colour-blue);
+    text-align: left;
 }
 
 .socialParagraph
 {
     font-size: 14px;
+    text-align: left;
 }
 
 .socialImage

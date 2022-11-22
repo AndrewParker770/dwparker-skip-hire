@@ -188,7 +188,7 @@ img
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
     overflow: scroll;
 }
 
@@ -251,7 +251,7 @@ img
     font-size: 24px;
 }
 
-@media(max-width: 500px)
+@media(max-width: 700px)
 {
     :root{
         --header-height: 75px;

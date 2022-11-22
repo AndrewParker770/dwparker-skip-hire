@@ -7,8 +7,6 @@ import lorryRow from '../media/lorryRow.jpg';
 import individualLorry from '../media/individualLorry.jpg';
 import individualSkip from '../media/individualSkip.jpg';
 
-import { BlurhashCanvas } from "react-blurhash";
-
 
 export default function Skips(){
     console.log()
@@ -37,7 +35,7 @@ export default function Skips(){
                 <div className={skipsCss.panelDiv}>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-                            <img src={individualSkip} id={skipsCss.infoImgCover} alt="individual D.W>Parker skip" />
+                            <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel1}>
                             <h3>Skip hire to suit your needs</h3>
@@ -55,13 +53,7 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel3}>
                         <div className={skipsCss.panelImg}>
-                            <img src={individualLorry} id={skipsCss.infoImgCover} alt="individual D.W>Parker Lorry" />
-                            <BlurhashCanvas
-                                hash={"LEHV6nWB2yk8pyo0adR*.7kCMdnj"}
-                                height
-                                width
-                            />
-                            {/* <img src={individualLorry} id={skipsCss.infoImgCover} alt="individual D.W>Parker Lorry" /> */}
+                            <img src={individualLorry} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker Lorry" />
                         </div>  
                         <div className={skipsCss.panelText}>
                             <h3>What we offer</h3>
@@ -70,7 +62,7 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel4}>
                         <div className={skipsCss.panelImg}>
-                            <img src={lorryRow} id={skipsCss.infoImgCover} alt="row of lorries" />
+                            <img src={lorryRow} id={skipsCss.infoImgCover} loading="lazy" alt="row of lorries" />
                         </div>  
                         <div className={skipsCss.panelText}>
                         <h3>Skip the hassle</h3>

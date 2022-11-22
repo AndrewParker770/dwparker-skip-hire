@@ -43,7 +43,7 @@ export default function Skips(){
                             height
                             id={skipsCss.infoImgCover}
                         />
-                        <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" />
+                        <img src={individualSkip} id={skipsCss.infoImgCover} alt="individual D.W>Parker skip" />
                         
                         
                         {/* <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" /> */}

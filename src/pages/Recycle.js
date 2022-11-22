@@ -2,7 +2,7 @@ import recycleCss from '../css/recycle.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
-import sandstone from '../media/sandstone.jpg';
+import sandstone from '../images/sandstone.jpg';
 
 export default function Recycle(){
 

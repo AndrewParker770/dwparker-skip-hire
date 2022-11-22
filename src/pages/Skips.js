@@ -2,17 +2,17 @@ import skipsCss from '../css/skips.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
-import skipSequence from '../media/skipSequence.jpg';
-import lorryRow from '../media/lorryRow.jpg';
-import individualLorry from '../media/individualLorry.jpg';
-import individualSkip from '../media/individualSkip.jpg';
+import skipSequence from '../images/skipSequence.jpg';
+import lorryRow from '../images/lorryRow.jpg';
+import individualLorry from '../images/individualLorry.jpg';
+import individualSkip from '../images/individualSkip.jpg';
 
 
 
-import { Blurhash } from "react-blurhash";
+import { Blurhash} from "react-blurhash";
 
 export default function Skips(){
-   
+    
     return(
         <div>
             <ScrollToTopOnMount/>
@@ -37,16 +37,13 @@ export default function Skips(){
                 <div className={skipsCss.panelDiv}>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-                        <Blurhash
-                            hash="eCF6B#-:0JInxr?@s;nmIoWUIko1%NocRk.8xbIUaxR*^+s;RiWAWU"
-                            width
-                            height
-                            id={skipsCss.infoImgCover}
-                        />
-                        <img src={individualSkip} id={skipsCss.infoImgCover} alt="individual D.W>Parker skip" />
-                        
-                        
-                        {/* <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" /> */}
+                            <Blurhash
+                                hash="UrF$qy%LoIof~qxaocj[s.ayj[ayM{WCa#WV"
+                                width
+                                height
+                                id={skipsCss.hashImg}
+                            />
+                            <img src={individualSkip} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="individual D.W>Parker skip" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel1}>
                             <h3>Skip hire to suit your needs</h3>
@@ -55,7 +52,13 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-                            <img src={skipSequence} id={skipsCss.infoImgCover} alt="variety of skip sizes" />
+                            <Blurhash
+                                hash="U:GSv3kCoej]?wWCj[oLxuaxa#oejXofkAa#"
+                                width
+                                height
+                                id={skipsCss.hashImg}
+                            />
+                            <img src={skipSequence} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="variety of skip sizes" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel2}>
                             <h3>Skip sizes to suit all properties</h3>
@@ -64,7 +67,13 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel3}>
                         <div className={skipsCss.panelImg}>
-                            <img src={individualLorry} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker Lorry" />
+                            <Blurhash
+                                hash="LXG+RDIVxuoH~qt7R*j?-:%LWCM}"
+                                width
+                                height
+                                id={skipsCss.hashImg}
+                            />
+                            <img src={individualLorry} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="individual D.W>Parker Lorry" />
                         </div>  
                         <div className={skipsCss.panelText}>
                             <h3>What we offer</h3>
@@ -73,7 +82,13 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel4}>
                         <div className={skipsCss.panelImg}>
-                            <img src={lorryRow} id={skipsCss.infoImgCover} loading="lazy" alt="row of lorries" />
+                            <Blurhash
+                                hash="LwHVPIxuj[ay_4t7ayayt7ofWBf6"
+                                width
+                                height
+                                id={skipsCss.hashImg}
+                            />
+                            <img src={lorryRow} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="row of lorries" />
                         </div>  
                         <div className={skipsCss.panelText}>
                         <h3>Skip the hassle</h3>

@@ -140,14 +140,26 @@
     position: relative;
 }
 
-#infoImgCover{
+#hashImg{
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    position: absolute;
+}
 
+.infoImgCover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
     position: absolute;
     left: 0;
+    transition: all 4s ease;
+}
+
+.imgInvisible{
+    opacity: 0;
 }
 
 .panelText{

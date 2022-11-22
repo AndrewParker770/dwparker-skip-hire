@@ -11,7 +11,7 @@ export default function Team(){
         <div>
             <ScrollToTopOnMount/>
             <div className={teamCss.headImageContainer}>
-                 <img className={teamCss.headImage} src={image3} loading="lazy" alt="lorry header image"/>
+                 <img className={teamCss.headImage} src={image3} loading="lazy" alt="lorry"/>
             </div>
             <div className={teamCss.headerContainer}>
                 <div className={teamCss.headerDiv}>

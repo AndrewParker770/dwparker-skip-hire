@@ -35,6 +35,7 @@ h1
 {
     font-family: 'Bebas Neue', 'Helvetica';
     color: var(--text-colour);
+    text-align: center;
 }
 
 #submittionIndicator

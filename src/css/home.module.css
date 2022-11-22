@@ -61,9 +61,17 @@
     text-align: center;
 }
 
-.headerDiv > p{
+.headerTextDiv{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.headerTextDiv > p{
     font-family: 'Open Sans', sans-serif;
-    color: var(--body-text-colour);
+    color: white;
     width: 80%;
 }
 
@@ -98,18 +106,17 @@
 
 .panel{
     box-shadow: 0px 1px 10px rgb(159, 153, 153);
-    flex: 1;
     border-radius: 5%;
 
-    
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
 .panelImg{
     background-color: rgb(141, 134, 134);
-    aspect-ratio: 1.8 /1;
+    aspect-ratio: 1.7 /1;
 
-    overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -119,9 +126,12 @@
     flex-direction: column;
     gap: 0.5em;
 
+    flex: 1;
+
     padding: 2em;
     padding-top: 1em;
     color: white;
+
 }
 
 .panelText > h3, p, .panelLink{
@@ -209,21 +219,16 @@
 }
 
 
-@media(max-width: 600px){
+@media(max-width: 1000px){
     .panelDiv{
         grid-template-columns: 1fr;
     }
-
-    .panelText > p{
-        min-height: unset;
-    }
-    
 }
 
 
 .middleImageContainer{
-    max-height: 400px;
-    aspect-ratio: 1.7/1;
+    max-height: 800px;
+    aspect-ratio: 1.1/1;
     width: 100%;
     overflow: hidden;
 
@@ -239,9 +244,9 @@
     display: flex;
     justify-content: left;
     background-color: var(--alter-background);
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    padding-left: 1em;
+    padding: 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .socialContainer
@@ -250,7 +255,7 @@
     flex-direction: column;
     gap: 0.5em;
     font-family: 'Open Sans', sans-serif;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .socialButtons

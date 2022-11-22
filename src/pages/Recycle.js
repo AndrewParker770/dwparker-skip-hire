@@ -2,6 +2,7 @@ import recycleCss from '../css/recycle.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
+import sandstone from '../media/sandstone.jpg';
 
 export default function Recycle(){
 
@@ -79,6 +80,7 @@ export default function Recycle(){
                     </div>
                 </div>
                 <div className={recycleCss.materialElem}>
+                    <img src={sandstone} id={recycleCss.materialCover} alt="sandstone"/>
                     <div className={recycleCss.materialTextbox}>
                         <h3>Sandstone</h3>
                     </div>

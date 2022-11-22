@@ -18,6 +18,7 @@
 
 .faqHeaderDiv > h1{
     color: var(--sign-colour-red);
+    text-align: center;
 }
 
 .faqHeaderDiv > p{

@@ -2,25 +2,33 @@ import skipsCss from '../css/skips.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
+import skipSequence from '../media/skipSequence.jpg';
+import lorryRow from '../media/lorryRow.jpg';
+import individualLorry from '../media/individualLorry.jpg';
+import individualSkip from '../media/individualSkip.jpg';
+
+import { BlurhashCanvas } from "react-blurhash";
+
 
 export default function Skips(){
+    console.log()
+
     return(
         <div>
             <ScrollToTopOnMount/>
             <div className={skipsCss.headImageContainer}>
-                
+            </div>
+            <div className={skipsCss.headerContainer}>
+                <div className={skipsCss.headerDiv}>
+                    <img className={skipsCss.iconStyle} src={icon} alt="logo of DWP"/>
+                    <h1>Do you want to hire a skip?</h1>
+                    <p>At D.W Parker Skip Hire, we offer a range of skips for hire, based in Ardrossan, Ayrshire, why not get in touch today?</p>
                 </div>
-                <div className={skipsCss.headerContainer}>
-                    <div className={skipsCss.headerDiv}>
-                        <img className={skipsCss.iconStyle} src={icon} alt="logo of DWP"/>
-                        <h1>Do you want to hire a skip?</h1>
-                        <p>At D.W Parker Skip Hire, we offer a range of skips for hire, based in Ardrossan, Ayrshire, why not get in touch today?</p>
-                    </div>
-                </div>
-                <div className={skipsCss.introductionDiv}>
-                    <h2>Skip Hire in Ayrshire</h2>
-                    <p>Had a recent property clearance? Has building work left you with excess materials and waste at your property? Whatever the reason you need to hire a skip, D.W Parker Skip Hire have skips available for hire for both domestic and commercial uses. We offer flexible hire services to all our customers at the most competitive rates in Ayrshire. Our skips are available to hire for both short term and long term contracts depending on our customer’s needs. No matter how long you want to hire our skips for, all our contracts are Ayrshire's most competitive prices.</p>
-                </div>
+            </div>
+            <div className={skipsCss.introductionDiv}>
+                <h2>Skip Hire in Ayrshire</h2>
+                <p>Had a recent property clearance? Has building work left you with excess materials and waste at your property? Whatever the reason you need to hire a skip, D.W Parker Skip Hire have skips available for hire for both domestic and commercial uses. We offer flexible hire services to all our customers at the most competitive rates in Ayrshire. Our skips are available to hire for both short term and long term contracts depending on our customer’s needs. No matter how long you want to hire our skips for, all our contracts are Ayrshire's most competitive prices.</p>
+            </div>
             <div className={skipsCss.contactPanel}>
                 <h2>To find out more about our skip hire services and for advice on the best skip size for your disposal needs contact D.W Parker Skip Hire today</h2>
                 <h2><span className={skipsCss.contactPanelBold}>01294 463 597</span> or <span className={skipsCss.contactPanelBold}>07770 563 078</span></h2>
@@ -29,7 +37,7 @@ export default function Skips(){
                 <div className={skipsCss.panelDiv}>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-                            
+                            <img src={individualSkip} id={skipsCss.infoImgCover} alt="individual D.W>Parker skip" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel1}>
                             <h3>Skip hire to suit your needs</h3>
@@ -38,16 +46,22 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-
+                            <img src={skipSequence} id={skipsCss.infoImgCover} alt="variety of skip sizes" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel2}>
                             <h3>Skip sizes to suit all properties</h3>
-                            <p>At D.W Parker Skip Hire we stock a wide range of skips that are suitable for needs of all sizes. Our skips are suitable for anything from small, house clearances to large scale building site waste disposal. We stock both midi and maxi skips and our experts are available to give advice on the best skip for your needs. We supply skips of all sizes from 4, 6, 8, 12 and 16 standard skips to 15, 20 and 40 cubic yard ROLO options.</p>
+                            <p>From 4yd, 8yd and 12yd builders to 40yd ROLO bins, we have a range of sizes available depending on your needs.</p>
                         </div>
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel3}>
                         <div className={skipsCss.panelImg}>
-
+                            <img src={individualLorry} id={skipsCss.infoImgCover} alt="individual D.W>Parker Lorry" />
+                            <BlurhashCanvas
+                                hash={"LEHV6nWB2yk8pyo0adR*.7kCMdnj"}
+                                height
+                                width
+                            />
+                            {/* <img src={individualLorry} id={skipsCss.infoImgCover} alt="individual D.W>Parker Lorry" /> */}
                         </div>  
                         <div className={skipsCss.panelText}>
                             <h3>What we offer</h3>
@@ -56,7 +70,7 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel4}>
                         <div className={skipsCss.panelImg}>
-
+                            <img src={lorryRow} id={skipsCss.infoImgCover} alt="row of lorries" />
                         </div>  
                         <div className={skipsCss.panelText}>
                         <h3>Skip the hassle</h3>

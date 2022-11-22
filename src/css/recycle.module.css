@@ -80,6 +80,7 @@
 
 .introductionDiv > h2{
     padding-bottom: 0.5em;
+    text-align: center;
 }
 
 .introductionDiv > p{
@@ -190,7 +191,9 @@
     align-items: center;
     justify-content: center;
     background-color: var(--alter-background);
+    overflow: hidden;
 
+    position: relative;
 }
 
 .materialElem:nth-child(odd){
@@ -207,11 +210,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .materialTextbox > h3{
     color: white;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+#materialCover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 @media (max-width:1000px){

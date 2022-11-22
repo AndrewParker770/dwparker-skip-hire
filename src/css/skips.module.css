@@ -138,6 +138,13 @@
     border-top-right-radius: 5%;
 }
 
+#infoImgCover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .panelText{
     display: flex;
     flex-direction: column;
@@ -274,6 +281,7 @@
 .skipDisplayTextbox > h3{
     color: grey;
     font-family: 'Open Sans', sans-serif;
+    z-index: 1;
 }
 
 @media (max-width:1000px){

@@ -7,12 +7,11 @@ import image3 from '../images/photo3.jpg';
 
 export default function Team(){
 
-    //<img className={teamCss.headImage} src={image3} alt="logo of DWP"/>
     return(
         <div>
             <ScrollToTopOnMount/>
             <div className={teamCss.headImageContainer}>
-                 <img className={teamCss.headImage} src={image3} alt="logo of DWP"/>
+                 <img className={teamCss.headImage} src={image3} loading="lazy" alt="lorry header image"/>
             </div>
             <div className={teamCss.headerContainer}>
                 <div className={teamCss.headerDiv}>

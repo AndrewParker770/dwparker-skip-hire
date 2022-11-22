@@ -22,7 +22,7 @@ function Faq(){
             <div className={faqCss.faqQuestionsDiv}>
                 <div className={faqCss.questions}>
                     <div className={faqCss.question}>
-                        <img className={faqCss.iconStyle} src={alarm} alt="alarm clock icon"/>
+                        <img className={faqCss.iconStyle} src={alarm} loading="lazy" alt="alarm clock icon"/>
                         <h4>What are your business hours?</h4>
                         <ul>
                             <li>Monday - Friday: 6am - 5pm</li>
@@ -31,12 +31,12 @@ function Faq(){
                         </ul>
                     </div>
                     <div className={faqCss.question}>
-                        <img className={faqCss.iconStyle} src={trash} alt="bin icon"/>
+                        <img className={faqCss.iconStyle} src={trash} loading="lazy" alt="bin icon"/>
                         <h4>What can be put in a skip?</h4>
                         <p>We take most household items, <span className={faqCss.bold}>except</span> fridge freezers, plaster board, tyres and gas bottles. We <span className={faqCss.bold}>can not</span> take hazardous materials, like asbestos.</p>
                     </div>
                     <div className={faqCss.question}>
-                        <img className={faqCss.iconStyle} src={map} alt="map pin icon"/>
+                        <img className={faqCss.iconStyle} src={map} loading="lazy" alt="map pin icon"/>
                         <h4>Where is your main office?</h4>
                         <ul>
                             <li>High Boydstone Farm,</li>
@@ -50,22 +50,22 @@ function Faq(){
                         <p>We collect cash or cheque on delivery of the skip, or we take card payment over the phone. Our card machine takes most major cards.</p>
                     </div>
                     <div className={faqCss.question}>
-                        <img id={faqCss.iconHourGlass} className={faqCss.iconStyle} src={hourglass} alt="hourglass icon"/>
+                        <img id={faqCss.iconHourGlass} className={faqCss.iconStyle} src={hourglass} loading="lazy" alt="hourglass icon"/>
                         <h4>How long can I have the skip?</h4>
                         <p>The price we quote is for a weeks hire, but a longer term hire can be arranged. Conversely, if you only need the skip for a few days we can pick it up if you give us a call once you're done. We also offer a wait and load service.</p>
                     </div>
                     <div className={faqCss.question}>
-                        <img className={faqCss.iconStyle} src={calendar} alt="calendar icon"/>
+                        <img className={faqCss.iconStyle} src={calendar} loading="lazy" alt="calendar icon"/>
                         <h4>How much notice do you need to order a skip?</h4>
                         <p>We usually need just one days notice and, on occasion, we can deliver same day. During busier times, please leave 2-3 days notice.</p>
                     </div>
                     <div className={faqCss.question}>
-                    <img className={faqCss.iconStyle} src={pie} alt="pie chart icon"/>
+                    <img className={faqCss.iconStyle} src={pie} loading="lazy" alt="pie chart icon"/>
                         <h4>If I only need the skip for one day is it cheaper?</h4>
                         <p>No, the price is still the same. As it is same amount of rubbish we need to process in the correct manor. We do however pride ourselves on helping you, the customer out as much as possible.  On request we can drop off and pick up the skip on the same day, we also offer a wait and load service.</p>
                     </div>
                     <div className={faqCss.question}>
-                    <img className={faqCss.iconStyle} src={recycle} alt="recycle icon"/>
+                    <img className={faqCss.iconStyle} src={recycle} loading="lazy" alt="recycle icon"/>
                         <h4>What happens to my rubbish?</h4>
                         <p>After we collect your skip we bring it back to our waste transfer station located at our site in Ardrossan. We sort through your rubbish and recycle as much as possible.</p>
                     </div>

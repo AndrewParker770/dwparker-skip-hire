@@ -8,9 +8,11 @@ import individualLorry from '../media/individualLorry.jpg';
 import individualSkip from '../media/individualSkip.jpg';
 
 
-export default function Skips(){
-    console.log()
 
+import { Blurhash } from "react-blurhash";
+
+export default function Skips(){
+   
     return(
         <div>
             <ScrollToTopOnMount/>
@@ -35,7 +37,16 @@ export default function Skips(){
                 <div className={skipsCss.panelDiv}>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-                            <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" />
+                        <Blurhash
+                            hash="eCF6B#-:0JInxr?@s;nmIoWUIko1%NocRk.8xbIUaxR*^+s;RiWAWU"
+                            width
+                            height
+                            id={skipsCss.infoImgCover}
+                        />
+                        <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" />
+                        
+                        
+                        {/* <img src={individualSkip} id={skipsCss.infoImgCover} loading="lazy" alt="individual D.W>Parker skip" /> */}
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel1}>
                             <h3>Skip hire to suit your needs</h3>

@@ -136,6 +136,8 @@
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+
+    position: relative;
 }
 
 #infoImgCover{
@@ -143,6 +145,9 @@
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+
+    position: absolute;
+    left: 0;
 }
 
 .panelText{

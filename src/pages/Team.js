@@ -2,8 +2,13 @@ import teamCss from '../css/team.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
+import threeLorries from '../images/threeLorries.jpg';
 
-import image3 from '../images/photo3.jpg';
+import tractor from '../images/tractor.jpg';
+import tipperDriver from '../images/tipperDriver.jpg';
+import skipLorryDriver from '../images/skipLorryDriver.jpg';
+
+import { Blurhash} from "react-blurhash";
 
 export default function Team(){
 
@@ -11,7 +16,14 @@ export default function Team(){
         <div>
             <ScrollToTopOnMount/>
             <div className={teamCss.headImageContainer}>
-                 <img className={teamCss.headImage} src={image3} loading="lazy" alt="lorry"/>
+                <Blurhash
+                    hash="LyIhmbt6ofoL~qoJayj[ogayaya}"
+                    width
+                    height
+                    id={teamCss.hashImg}
+                    className={teamCss.headImage}
+                />
+                <img loading="lazy" src={threeLorries} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="three lorries in a row" />
             </div>
             <div className={teamCss.headerContainer}>
                 <div className={teamCss.headerDiv}>
@@ -36,7 +48,14 @@ export default function Team(){
                     </div>
                     <div className={teamCss.panel}>
                         <div className={teamCss.panelImg}>
-
+                            <Blurhash
+                                hash="LRBzY1V;OHNGKUe-o$bJIvo$slxu"
+                                width
+                                height
+                                id={`${teamCss.hashImg} ${teamCss.tipperImage}`}
+                                className={teamCss.headImage}
+                            />
+                            <img loading="lazy" src={skipLorryDriver} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="skip lorry" />
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Skip Lorry drivers</h3>
@@ -45,7 +64,14 @@ export default function Team(){
                     </div>
                     <div className={teamCss.panel}>
                         <div className={teamCss.panelImg}>
-
+                            <Blurhash
+                                hash="LWHo5ro#j?oI9GRjRjWB~ot6M{Rk"
+                                width
+                                height
+                                id={`${teamCss.hashImg} ${teamCss.tipperImage}`}
+                                className={teamCss.headImage}
+                            />
+                            <img loading="lazy" src={tipperDriver} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="tipper" />
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Tipper drivers</h3>
@@ -72,7 +98,14 @@ export default function Team(){
                     </div>
                     <div className={teamCss.panel}>
                         <div className={teamCss.panelImg}>
-
+                            <Blurhash
+                                hash="LqGleVxsxtoe_4s.oLf8xuj[WCay"
+                                width
+                                height
+                                id={teamCss.hashImg}
+                                className={teamCss.headImage}
+                            />
+                            <img loading="lazy" src={tractor} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="tractor" />
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Farm workers</h3>

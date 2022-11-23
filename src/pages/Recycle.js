@@ -4,6 +4,9 @@ import ScrollToTopOnMount from '../ScrollToTopOnMount';
 import icon from '../media/icon.svg';
 import sandstone from '../images/sandstone.jpg';
 
+import tarPlanings from '../images/tarPlanings.jpg';
+import tipperDriver from '../images/tipperDriver.jpg';
+
 import { Blurhash} from "react-blurhash";
 
 export default function Recycle(){
@@ -29,7 +32,13 @@ export default function Recycle(){
                 <div className={recycleCss.panelDiv}>
                     <div className={recycleCss.panel}>
                         <div className={recycleCss.panelImg}>
-                            
+                            <Blurhash
+                                hash="LWHo5ro#j?oI9GRjRjWB~ot6M{Rk"
+                                width
+                                height
+                                id={recycleCss.hashImg}
+                            />
+                            <img loading="lazy" src={tipperDriver} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="tipper driver" />
                         </div>  
                         <div className={recycleCss.panelText} id={recycleCss.panel1}>
                             <h3>We supply:</h3>
@@ -56,7 +65,13 @@ export default function Recycle(){
                     </div>
                     <div className={recycleCss.panel} id={recycleCss.panel3}>
                         <div className={recycleCss.panelImg}>
-
+                            <Blurhash
+                                hash="L+EpjLWAt7ozpMs:WCofNIo#axRj"
+                                width
+                                height
+                                id={recycleCss.hashImg}
+                            />
+                            <img loading="lazy" src={tarPlanings} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="tar plannings being poursed into bin" />
                         </div>  
                         <div className={recycleCss.panelText}>
                             <h3>Recycled materials</h3>
@@ -88,7 +103,7 @@ export default function Recycle(){
                         height
                         id={recycleCss.hashImg}
                     />
-                    <img loading="lazy" src={sandstone} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="row of lorries" />
+                    <img loading="lazy" src={sandstone} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="sandstone" />
                     <div className={recycleCss.materialTextbox}>
                         <h3>Sandstone</h3>
                     </div>

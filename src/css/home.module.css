@@ -15,7 +15,7 @@
 
 
 .headImageContainer{
-    max-height: 200px;
+    max-height: 500px;
     aspect-ratio: 1.7/1;
     width: 100%;
     overflow: hidden;
@@ -117,8 +117,35 @@
     background-color: rgb(141, 134, 134);
     aspect-ratio: 1.7 /1;
 
+    max-height: 300px;
+
+    overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+
+    position: relative;
+}
+
+#hashImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+.infoImgCover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    transition: all 4s ease;
+}
+
+.imgInvisible{
+    opacity: 0;
 }
 
 .panelText{
@@ -227,8 +254,8 @@
 
 
 .middleImageContainer{
-    max-height: 800px;
-    aspect-ratio: 1.1/1;
+    max-height: 500px;
+    aspect-ratio: 1.7/1;
     width: 100%;
     overflow: hidden;
 

@@ -2,11 +2,18 @@ import React from 'react';
 
 import homeCSS from './css/home.module.css'
 import ScrollToTopOnMount from './ScrollToTopOnMount';
-import icon from './media/icon.svg'
+
+import icon from './media/icon.svg';
+import skipSequence from './images/skipSequence.jpg';
+import lorryAndVan from './images/lorryAndVan.jpg';
+import travel from './images/travel.jpg';
+
+import individualSkip from './images/individualSkip.jpg';
 
 import facebook from './media/facebookIcon.svg'
 import instagram from './media/instaIcon.svg'
 import { Link } from 'react-router-dom';
+import { Blurhash} from "react-blurhash";
 
 function Home() {
   return (
@@ -31,7 +38,13 @@ function Home() {
         <div className={homeCSS.panelDiv}>
           <div className={homeCSS.panel}>
             <div className={homeCSS.panelImg}>
-                      
+              <Blurhash
+                  hash="UrF$qy%LoIof~qxaocj[s.ayj[ayM{WCa#WV"
+                  width
+                  height
+                  id={homeCSS.hashImg}
+              />
+              <img loading="lazy" src={individualSkip} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="individual D.W>Parker skip" />
             </div>  
             <div className={homeCSS.panelText}>
               <h3>Waste management services</h3>
@@ -76,7 +89,13 @@ function Home() {
         <div className={homeCSS.panelDiv}>
           <div className={homeCSS.panel}>
             <div className={homeCSS.panelImg}>
-
+              <Blurhash
+                hash="U:GSv3kCoej]?wWCj[oLxuaxa#oejXofkAa#"
+                width
+                height
+                id={homeCSS.hashImg}
+              />
+              <img loading="lazy" src={skipSequence} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="variety of skip sizes" />
             </div>  
             <div className={homeCSS.panelText}>
               <h3>Skips in all sizes</h3>
@@ -88,7 +107,13 @@ function Home() {
           </div>
           <div className={homeCSS.panel}>
             <div className={homeCSS.panelImg}>
-
+              <Blurhash
+                hash="LkE{kcE8WYoeX=ofj[az5E%1oeWV"
+                width
+                height
+                id={homeCSS.hashImg}
+              />
+              <img loading="lazy" src={lorryAndVan} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="van and lorry" />
             </div>  
             <div className={homeCSS.panelText}>
               <h3>Household waste removal experts</h3>
@@ -100,7 +125,13 @@ function Home() {
           </div>
           <div className={homeCSS.panel}>
             <div className={homeCSS.panelImg}>
-
+            <Blurhash
+                hash="LHEMRZ4otSx]~qISROoLyDofxuWB"
+                width
+                height
+                id={homeCSS.hashImg}
+              />
+              <img loading="lazy" src={travel} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="lorry to largs" />
             </div>  
             <div className={homeCSS.panelText}>
               <h3>Local services for you</h3>

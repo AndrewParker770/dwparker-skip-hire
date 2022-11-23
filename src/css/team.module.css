@@ -4,7 +4,7 @@
 }
 
 .headImageContainer{
-    max-height: 200px;
+    max-height: 300px;
     aspect-ratio: 1/2;
     width: 100%;
     overflow: hidden;
@@ -13,10 +13,29 @@
 }
 
 .headImage{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
     object-position: 100% 60%;
+}
+
+#hashImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+.infoImgCover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    transition: all 4s ease;
+}
+
+.imgInvisible{
+    opacity: 0;
 }
 
 .iconStyle{
@@ -58,10 +77,6 @@
 }
 
 @media (min-width: 600px){
-    .headImageContainer{
-        max-height: 300px;
-    }
-
     .headImage{
         object-position: 100% 50%;
     }
@@ -145,6 +160,8 @@
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+
+    position: relative;
 }
 
 .panelText{
@@ -163,9 +180,9 @@
     text-align: center;
 }
 
-
-
-
+#tipperImage{
+    object-position: center 60%;
+}
 
 @media (max-width: 650px)
 {

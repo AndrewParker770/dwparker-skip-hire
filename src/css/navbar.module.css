@@ -21,6 +21,9 @@
  
     --overflow-var: auto;
     overflow: var(--overflow-var);
+
+    /* If changing must change max-width because var does not work :( */
+    --change-point: 700px;
 }
 
 a

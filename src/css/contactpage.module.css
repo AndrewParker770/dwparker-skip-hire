@@ -30,7 +30,6 @@
     padding: 20px;
     width: 80%;
     gap: 15px;
-    transform: translateY(-50px);
     background-color: white;
     max-width: 1000px;
     -webkit-border-radius: 25px;
@@ -158,14 +157,14 @@
     font-size: 15px;
 }
 
+@media (min-width: 600px){
+    .headerDiv{
+        transform: translateY(-50px);
+    }
+}
+
 @media (max-width: 900px)
 {
-    .headerDiv{
-        transform: none;
-        width: 100%;
-        -webkit-border-radius: 0px;
-    }
-
     .headerDiv > p{
         width: 100%;
     }

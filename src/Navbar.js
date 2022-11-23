@@ -81,11 +81,11 @@ function Navbar() {
   const bodyTarget = React.useRef(null);
   const bodySize = useSize(bodyTarget)
   
-  if(isNavActive && bodySize.width > 600){
+  const change_point = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--change-point').slice(0, -2));
+  if(isNavActive && bodySize.width > change_point){
     disableNav();
   }
   
-
   return (
     <div className={navbarCSS.navOuter} ref={bodyTarget}>
       <div className={navbarCSS.navbarBody}>

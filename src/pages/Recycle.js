@@ -4,6 +4,8 @@ import ScrollToTopOnMount from '../ScrollToTopOnMount';
 import icon from '../media/icon.svg';
 import sandstone from '../images/sandstone.jpg';
 
+import { Blurhash} from "react-blurhash";
+
 export default function Recycle(){
 
     return(
@@ -80,7 +82,13 @@ export default function Recycle(){
                     </div>
                 </div>
                 <div className={recycleCss.materialElem}>
-                    <img src={sandstone} id={recycleCss.materialCover} alt="sandstone"/>
+                    <Blurhash
+                        hash="L=HL-yWBWqkB.TWCoJa|tTj[f6a#"
+                        width
+                        height
+                        id={recycleCss.hashImg}
+                    />
+                    <img loading="lazy" src={sandstone} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="row of lorries" />
                     <div className={recycleCss.materialTextbox}>
                         <h3>Sandstone</h3>
                     </div>

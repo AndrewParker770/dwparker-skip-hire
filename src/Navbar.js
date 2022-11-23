@@ -24,10 +24,6 @@ const useSize = (target) => {
 
 function Navbar() {
 
-  function scrollPage(){
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }
-
   const headerTarget = React.useRef(null);
   const headerSize = useSize(headerTarget);
   if (headerSize){

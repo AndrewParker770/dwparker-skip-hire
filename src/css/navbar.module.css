@@ -2,7 +2,7 @@
 {
     --title-color:rgb(207,51,65);
     --tel-text: rgb(70,57,57);
-    --tel-highlightes-text: rgb(47, 47, 163);;
+    --tel-highlightes-text: rgb(47, 47, 163);
 
     --sign-colour-blue: rgb(8,37,182);
     --sign-colour-yellow: rgb(255,191,64);
@@ -176,7 +176,6 @@ img
     background-color: white;
     transition: tranform 1s ease-in-out;
     transform: translateY(var(--navbar-translate));
-
     z-index: 10;
 }
 
@@ -186,12 +185,13 @@ img
     background-color: transparent;
     
     padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 8em;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
     gap: 1em;
+
     overflow: scroll;
 }
 

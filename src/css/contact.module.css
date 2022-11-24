@@ -2,6 +2,8 @@
 {
     --backgorund-colour: rgb(51,48,48);
     --text-colour: white;
+
+    --highlighted-text: rgb(47, 47, 163);
 }
 
 input, button
@@ -37,13 +39,6 @@ h1
     color: var(--text-colour);
     text-align: center;
 }
-
-#submittionIndicator
-{
-    color: greenyellow;
-    display: none;
-}
-
 
 .contactDiv
 {
@@ -139,3 +134,123 @@ button
     color: grey;
 }
 
+.formPara{
+    color: var(--backgorund-colour);
+    font-weight: 800;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.disabledButton:hover + .formPara{
+    color: white;
+}
+
+.symbolContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4 ease;
+}
+
+.symbolCircle{
+    width: 3.5em;
+    height: 3.5em;
+    border: 3px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.acceptSymbol{
+    width: 2.5em;
+}
+
+.warnSymbol{
+    width: 2.5em;
+    transform: translateY(-0.25em);
+}
+
+.visibleSymbol{
+    animation-name: symbolAnimation;
+    animation-duration: 4s;
+}
+
+.circleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.circleDiv > p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.warnLink{
+    text-decoration: underline;
+    transition: all 0.4s ease;
+}
+
+.warnLink:hover{
+    color: rgb(179, 172, 172);
+}
+
+.outerWaiting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.waitingCircle{
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    border: 3px solid var(--backgorund-colour);
+    border-left-color: white;
+    animation:3s rotate infinite linear  ;
+    transform-origin:50% 50%;
+    -moz-animation: 3s rotate infinite linear  ;
+    -moz-transform-origin: 50% 50%; 
+    -webkit-animation: 3s rotate infinite linear  ;
+    -webkit-transform-origin:50% 50%;  
+}
+
+@-moz-keyframes rotate {
+    0%    { -moz-transform: rotate(0); } 
+    100% { -moz-transform: rotate(360deg); }  
+}
+
+@-webkit-keyframes rotate {
+    0%    { -webkit-transform: rotate(0); }
+    100% { -webkit-transform: rotate(360deg); } 
+}
+
+@keyframes rotate{
+    0%    { transform: rotate(0);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes symbolAnimation{
+    0%      {width: 2.5em;}
+    10%     {width: 2.5em;}
+    50%     {width: 4em;}
+    75%     {width: 2.5em;}
+    100%    {width: 2.5em;}
+}
+
+.invisible{
+    display: none;
+}

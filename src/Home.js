@@ -16,11 +16,17 @@ import { Link } from 'react-router-dom';
 import { Blurhash} from "react-blurhash";
 
 function Home() {
-  var OSName="Unknown OS";
-  if (navigator.appVersion.indexOf("Win")!== -1) OSName="Windows";
-  if (navigator.appVersion.indexOf("Mac")!== -1) OSName="MacOS";
-  if (navigator.appVersion.indexOf("X11")!== -1) OSName="UNIX";
-  if (navigator.appVersion.indexOf("Linux")!== -1) OSName="Linux";
+  var facebookLink = "https://www.facebook.com/DwpSkips/";
+  var instaLink = "https://www.instagram.com/dwpskips/";
+
+  if(navigator.platform === "iPhone" || navigator.platform === "iPod" || navigator.platform === "iPad"){
+    // IOS
+    instaLink = "instagram://user?username=dwpskips?href=https://www.instagram.com/dwpskips/"
+  }
+  if(navigator.platform === "Android"){
+    // Android
+    
+  }
 
   return (
     <div className={homeCSS.homePageDiv}>
@@ -33,7 +39,6 @@ function Home() {
               <img className={homeCSS.iconStyle} src={icon} alt="logo of DWP"/>
               <h1>Delivering Skips across Ayrshire</h1>
               <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ardrossan, Ayrshire and surrounding areas.</p>
-              <h1>{OSName}</h1>
           </div>
       </div>
 
@@ -160,8 +165,8 @@ function Home() {
           <h2 className={homeCSS.socialTitle}>Follow us on social media</h2>
           <p className={homeCSS.socialHighlight}>Leave a like or comment</p>
           <div className={homeCSS.socialButtons}>
-            <a href="https://www.facebook.com/DwpSkips/"><img className={homeCSS.socialIconStyle} src={facebook} alt="link to DWP facebook page"/></a>
-            <a href="https://www.instagram.com/dwpskips/"><img className={homeCSS.socialIconStyle} src={instagram} alt="link to DWP instagram page"/></a>
+            <a href={facebookLink}><img className={homeCSS.socialIconStyle} src={facebook} alt="link to DWP facebook page"/></a>
+            <a href={instaLink}><img className={homeCSS.socialIconStyle} src={instagram} alt="link to DWP instagram page"/></a>
           </div>
           <p className={homeCSS.socialParagraph}>Follow us to get an insight into our day-to-day operations with regular updates from our team. Leave a like or write a review to help us improve our services.</p>
         </div>

@@ -21,7 +21,7 @@ function Home() {
  
   if(navigator.platform === "iPhone" || navigator.platform === "iPod" || navigator.platform === "iPad"){
     // IOS
-    instaLink = "instagram://user?username=dwpskips"
+    instaLink = "instagram://user?username=dwpskips/?href=https://www.instagram.com/dwpskips/"
     // "100063542438374";
   }
   if(navigator.platform === "Android"){

@@ -16,12 +16,12 @@ import { Link } from 'react-router-dom';
 import { Blurhash} from "react-blurhash";
 
 function Home() {
-  var facebookLink = "https://www.facebook.com/DwpSkips/";
   var instaLink = "https://www.instagram.com/dwpskips/";
-
+  var facebookLink = "https://www.facebook.com/DwpSkips/";
+ 
   if(navigator.platform === "iPhone" || navigator.platform === "iPod" || navigator.platform === "iPad"){
     // IOS
-    instaLink = "instagram://user?username=dwpskips?href=https://www.instagram.com/dwpskips/"
+    instaLink = "instagram://user?username=dwpskips"
     // "100063542438374";
   }
   if(navigator.platform === "Android"){

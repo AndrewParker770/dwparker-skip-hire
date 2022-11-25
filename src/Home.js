@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom';
 import { Blurhash} from "react-blurhash";
 
 function Home() {
+
   return (
     <div className={homeCSS.homePageDiv}>
       <ScrollToTopOnMount/>
@@ -27,6 +28,7 @@ function Home() {
               <img className={homeCSS.iconStyle} src={icon} alt="logo of DWP"/>
               <h1>Delivering Skips across Ayrshire</h1>
               <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ardrossan, Ayrshire and surrounding areas.</p>
+              <h1>{navigator.platform}</h1>
           </div>
       </div>
 

@@ -16,6 +16,11 @@ import { Link } from 'react-router-dom';
 import { Blurhash} from "react-blurhash";
 
 function Home() {
+  var OSName="Unknown OS";
+  if (navigator.appVersion.indexOf("Win")!== -1) OSName="Windows";
+  if (navigator.appVersion.indexOf("Mac")!== -1) OSName="MacOS";
+  if (navigator.appVersion.indexOf("X11")!== -1) OSName="UNIX";
+  if (navigator.appVersion.indexOf("Linux")!== -1) OSName="Linux";
 
   return (
     <div className={homeCSS.homePageDiv}>
@@ -28,7 +33,7 @@ function Home() {
               <img className={homeCSS.iconStyle} src={icon} alt="logo of DWP"/>
               <h1>Delivering Skips across Ayrshire</h1>
               <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ardrossan, Ayrshire and surrounding areas.</p>
-              <h1>{navigator.platform}</h1>
+              <h1>{OSName}</h1>
           </div>
       </div>
 

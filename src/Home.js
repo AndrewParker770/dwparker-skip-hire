@@ -22,10 +22,11 @@ function Home() {
   if(navigator.platform === "iPhone" || navigator.platform === "iPod" || navigator.platform === "iPad"){
     // IOS
     instaLink = "instagram://user?username=dwpskips?href=https://www.instagram.com/dwpskips/"
+
   }
   if(navigator.platform === "Android"){
     // Android
-    
+    instaLink = "instagram://user?username=dwpskips?href=https://www.instagram.com/dwpskips/"
   }
 
   return (

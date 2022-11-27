@@ -3,6 +3,10 @@ import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
 import sandstone from '../images/sandstone.jpg';
+import brick from '../images/crushedBrick.jpg';
+import tarPile from '../images/tarPlaningsPile.jpg';
+import typeOne from '../images/typeOne.jpg';
+import whinDust from '../images/whinDust.jpg';
 
 import tarPlanings from '../images/tarPlanings.jpg';
 import tipperDriver from '../images/tipperDriver.jpg';
@@ -87,11 +91,25 @@ export default function Recycle(){
                     </div>
                 </div>
                 <div className={recycleCss.materialElem}>
+                <Blurhash
+                        hash="L2E{kJ00-.?b?w%f-.xu4=~pIToe"
+                        width
+                        height
+                        id={recycleCss.hashImg}
+                    />
+                    <img loading="lazy" src={whinDust} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="whin dust" />
                     <div className={recycleCss.materialTextbox}>
                         <h3>Whin Dust</h3>
                     </div>
                 </div>
                 <div className={recycleCss.materialElem}>
+                    <Blurhash
+                        hash="L5GSAU%M^*xs~p%KRjM|^*afadt7"
+                        width
+                        height
+                        id={recycleCss.hashImg}
+                    />
+                    <img loading="lazy" src={typeOne} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="type 1 material" />
                     <div className={recycleCss.materialTextbox}>
                         <h3>Type 1</h3>
                     </div>
@@ -106,6 +124,30 @@ export default function Recycle(){
                     <img loading="lazy" src={sandstone} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="sandstone" />
                     <div className={recycleCss.materialTextbox}>
                         <h3>Sandstone</h3>
+                    </div>
+                </div>
+                <div className={recycleCss.materialElem}>
+                    <Blurhash
+                        hash="LDHU@2_3xus+~VnhV@t7RjWBRjj["
+                        width
+                        height
+                        id={recycleCss.hashImg}
+                    />
+                    <img loading="lazy" src={brick} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="crushed brick" />
+                    <div className={recycleCss.materialTextbox}>
+                        <h3>Crushed Brick</h3>
+                    </div>
+                </div>
+                <div className={recycleCss.materialElem}>
+                    <Blurhash
+                        hash="LkDv~JWBs,of_NaeoIoe-=t6oJoe"
+                        width
+                        height
+                        id={recycleCss.hashImg}
+                    />
+                    <img loading="lazy" src={tarPile} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="tar planings" />
+                    <div className={recycleCss.materialTextbox}>
+                        <h3>Tar Planings</h3>
                     </div>
                 </div>
             </div>

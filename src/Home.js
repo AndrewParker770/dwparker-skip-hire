@@ -4,6 +4,8 @@ import homeCSS from './css/home.module.css'
 import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 import icon from './media/icon.svg';
+import arrow from './media/arrow.svg';
+
 import skipSequence from './images/skipSequence.jpg';
 import lorryAndVan from './images/lorryAndVan.jpg';
 import travel from './images/travel.jpg';
@@ -70,6 +72,7 @@ function Home() {
     displayImgRef.current.classList.add(`${homeCSS.imgInvisible}`);
   }, [currentIndex]);
 
+  // ▶◀
   return (
     <div className={homeCSS.homePageDiv}>
       <ScrollToTopOnMount/>
@@ -86,8 +89,8 @@ function Home() {
               <div key={imageIndex} onClick={() => (setIndex(imageIndex))} className={currentIndex === imageIndex ? `${homeCSS.indexDot} ${homeCSS.selectedDot}` : `${homeCSS.indexDot}`}></div>
             ))}
         </div>
-        <div className={`${homeCSS.arrow} ${homeCSS.rightArrow}`} onClick={increaseIndex}>▶</div>
-        <div className={`${homeCSS.arrow} ${homeCSS.leftArrow}`} onClick={decreaseIndex}>◀</div>
+        <img src={arrow} className={`${homeCSS.arrow} ${homeCSS.rightArrow}`} onClick={increaseIndex} />
+        <img src={arrow} className={`${homeCSS.arrow} ${homeCSS.leftArrow}`} onClick={decreaseIndex} />
       </div>
       <div className={homeCSS.headerContainer}>
           <div className={homeCSS.headerDiv}>

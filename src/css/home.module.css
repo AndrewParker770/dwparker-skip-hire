@@ -25,6 +25,7 @@
     position: relative;
 }
 
+
 .setIndexContainer{
     display: flex;
     position:absolute;
@@ -46,6 +47,41 @@
 
     background-color: white;
     transition: all 0.4s ease;
+}
+
+.arrow{
+    cursor: pointer;
+    font-size: 28px;
+    
+    color: transparent;
+    transition: all 0.4s ease;
+    color: hsla(0, 0%, 95%, 0.8);
+}
+
+.arrow:hover{
+    color: white;
+}
+
+.headImageContainer:hover > .rightArrow{
+    left: 95%;
+}
+
+.headImageContainer:hover > .leftArrow{
+    left: 5%;
+}
+
+.rightArrow{
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+}
+
+.leftArrow{
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(-50%, -50%);
 }
 
 .indexDot:hover{

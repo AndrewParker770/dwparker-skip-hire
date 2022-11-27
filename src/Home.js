@@ -80,12 +80,14 @@ function Home() {
             height
             id={homeCSS.hashImg}
         />
-        <img ref={displayImgRef} loading="lazy" src={images[currentIndex]['img']} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt={images[currentIndex]['alt']} />
+        <img key={Date.now()} ref={displayImgRef} loading="lazy" src={images[currentIndex]['img']} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt={images[currentIndex]['alt']} />
         <div className={homeCSS.setIndexContainer}>
           {images.map( (image, imageIndex) => (
               <div key={imageIndex} onClick={() => (setIndex(imageIndex))} className={currentIndex === imageIndex ? `${homeCSS.indexDot} ${homeCSS.selectedDot}` : `${homeCSS.indexDot}`}></div>
             ))}
         </div>
+        <div className={`${homeCSS.arrow} ${homeCSS.rightArrow}`} onClick={increaseIndex}>▶</div>
+        <div className={`${homeCSS.arrow} ${homeCSS.leftArrow}`} onClick={decreaseIndex}>◀</div>
       </div>
       <div className={homeCSS.headerContainer}>
           <div className={homeCSS.headerDiv}>

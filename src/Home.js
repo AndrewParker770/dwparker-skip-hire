@@ -10,10 +10,20 @@ import travel from './images/travel.jpg';
 
 import individualSkip from './images/individualSkip.jpg';
 
+
+import sign from './images/sign.jpg';
+import pulmonaryFibSkip from './images/pulmonaryFibSkip.jpg';
+import newSkips from './images/newSkips.jpg';
+import enclosedLowering from './images/enclosedLowering.jpg';
+
+
 import facebook from './media/facebookIcon.svg'
 import instagram from './media/instaIcon.svg'
 import { Link } from 'react-router-dom';
 import { Blurhash} from "react-blurhash";
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { useRef } from 'react';
 
 function Home() {
   var instaLink = "https://www.instagram.com/dwpskips/";
@@ -21,19 +31,61 @@ function Home() {
  
   if(navigator.platform === "iPhone" || navigator.platform === "iPod" || navigator.platform === "iPad"){
     // IOS
-    instaLink = "http://instagram.com/_u/dwpskips"
-    // // "100063542438374";
+    
+    // "100063542438374"
   }
   if(navigator.platform === "Android"){
     // Android
-    // instaLink = "instagram://user?username=dwpskips?href=https://www.instagram.com/dwpskips/"
+    
   }
+
+  const images = [
+    {'img' : newSkips, 'alt': "lorry full of new skips", 'blur': "LqGScXM_t7Rj_4WBWAkCxta}WCoe"},
+    {'img' : sign, 'alt': "D.W.Parker Sign", 'blur': "LTCjq=MzT0xuEraxa#WB8^xZwaM|"},
+    {'img' : pulmonaryFibSkip, 'alt': "Skips in support of pulmonary fibrosis", 'blur': "LhDAcf%hx_odKnNfXAoc%LxZRjWA"},
+    {'img': enclosedLowering, 'alt': "Enclosed skip being lowered", 'blur': "LnGbk]S$xts8_4jZkDbIX8nhWCSh"}
+  ]
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const decreaseIndex = () => {
+    const atFirstIndex = (currentIndex === 0);
+    const newIndex = (atFirstIndex ? images.length -1 : currentIndex -1);
+    setCurrentIndex(newIndex);
+  }
+
+  const increaseIndex = () => {
+    const atLastIndex = (currentIndex === images.length -1);
+    const newIndex = (atLastIndex ? 0: currentIndex + 1);
+    setCurrentIndex(newIndex);
+  }
+
+  const setIndex = (chosenIndex) => {
+    setCurrentIndex(chosenIndex);
+  }
+
+
+  const displayImgRef = useRef();
+  useEffect(() =>{
+    displayImgRef.current.classList.add(`${homeCSS.imgInvisible}`);
+  }, [currentIndex]);
 
   return (
     <div className={homeCSS.homePageDiv}>
       <ScrollToTopOnMount/>
       <div className={homeCSS.headImageContainer}>
-                
+        <Blurhash
+            hash={images[currentIndex]['blur']}
+            width
+            height
+            id={homeCSS.hashImg}
+        />
+        <img ref={displayImgRef} loading="lazy" src={images[currentIndex]['img']} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt={images[currentIndex]['alt']} />
+        <div className={homeCSS.setIndexContainer}>
+          {images.map( (image, imageIndex) => (
+              <div key={imageIndex} onClick={() => (setIndex(imageIndex))} className={currentIndex === imageIndex ? `${homeCSS.indexDot} ${homeCSS.selectedDot}` : `${homeCSS.indexDot}`}></div>
+            ))}
+        </div>
       </div>
       <div className={homeCSS.headerContainer}>
           <div className={homeCSS.headerDiv}>

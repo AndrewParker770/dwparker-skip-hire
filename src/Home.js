@@ -11,13 +11,17 @@ import lorryAndVan from './images/lorryAndVan.jpg';
 import travel from './images/travel.jpg';
 
 import individualSkip from './images/individualSkip.jpg';
-
+import individualLorry from './images/individualLorry.jpg';
+import environment from './images/environment.jpg';
 
 import sign from './images/sign.jpg';
 import pulmonaryFibSkip from './images/pulmonaryFibSkip.jpg';
 import newSkips from './images/newSkips.jpg';
 import enclosedLowering from './images/enclosedLowering.jpg';
 
+import tipper from './images/tipper.jpg';
+import snowy from './images/snowy.jpg';
+import lineUp from './images/lineUp.jpg';
 
 import facebook from './media/facebookIcon.svg'
 import instagram from './media/instaIcon.svg'
@@ -72,7 +76,7 @@ function Home() {
     displayImgRef.current.classList.add(`${homeCSS.imgInvisible}`);
   }, [currentIndex]);
 
-  // ▶◀
+  
   return (
     <div className={homeCSS.homePageDiv}>
       <ScrollToTopOnMount/>
@@ -96,13 +100,26 @@ function Home() {
           <div className={homeCSS.headerDiv}>
               <img className={homeCSS.iconStyle} src={icon} alt="logo of DWP"/>
               <h1>Delivering Skips across Ayrshire</h1>
-              <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ardrossan, Ayrshire and surrounding areas.</p>
+              <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ayrshire and surrounding areas.</p>
           </div>
       </div>
 
-      <div className={homeCSS.middleImageContainer}>
-                
+      <div className={`${homeCSS.parallax1}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}}>
+            <Blurhash
+            hash="LjEy*;%J-:of%%xstRt6bxt7a$f9"
+            width
+            height
+            id={`${homeCSS.middleHashImg}`}
+            />
+            <div className={`${homeCSS.innerParallax}`}>
+
+            </div>
       </div>
+      {/* <div className={homeCSS.parallaxHolder}>
+        {/* 
+        />
+        <div className={`${homeCSS.parallax} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} />
+      </div> */}
 
       <div className={homeCSS.outerPanelDiv}>
         <div className={homeCSS.panelDiv}>
@@ -126,7 +143,13 @@ function Home() {
           </div>
           <div className={homeCSS.panel}>
             <div className={homeCSS.panelImg}>
-
+              <Blurhash
+                  hash="LLE.%=9bE4xY%%oIbHWC03-T$|R-"
+                  width
+                  height
+                  id={homeCSS.hashImg}
+              />
+              <img loading="lazy" src={environment} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="sunrise over D.W.Parker Skip Hire" />
             </div>  
             <div className={homeCSS.panelText}>
               <h3>Environmentally friendly recycling</h3>
@@ -138,7 +161,13 @@ function Home() {
           </div>
           <div className={homeCSS.panel}>
             <div className={homeCSS.panelImg}>
-
+              <Blurhash
+                hash="LXG+RDIVxuoH~qt7R*j?-:%LWCM}"
+                width
+                height
+                id={homeCSS.hashImg}
+              />
+              <img loading="lazy" src={individualLorry} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="individual D.W Parker Lorry" />
             </div>  
             <div className={homeCSS.panelText}>
                 <h3>Rubbish disposal</h3>
@@ -151,8 +180,8 @@ function Home() {
         </div>
       </div>
 
-      <div className={homeCSS.middleImageContainer}>
-                
+      <div className={homeCSS.parallax}>
+        
       </div>
 
       <div className={homeCSS.outerPanelDiv}>
@@ -206,7 +235,7 @@ function Home() {
             <div className={homeCSS.panelText}>
               <h3>Local services for you</h3>
               <div className={homeCSS.headerTextDiv}>
-                <p>We are a local, family run business based in Ayrshire. We can deliver skips, recycle materials and collect waste from you in Ardrossan, Ayr, Kilmarnock and Ayrshire areas.</p>
+                <p>We are a local, family run business based in Ardrossan. We can deliver skips and recycled materials throughout Ayrshire.</p>
               </div>
               <Link className={homeCSS.panelLink} to="/contact">Contact Us</Link>
             </div>
@@ -214,8 +243,8 @@ function Home() {
         </div>
       </div>
 
-      <div className={homeCSS.middleImageContainer}>
-                
+      <div className={homeCSS.parallax}>
+        
       </div>
 
       <div className={homeCSS.socialDiv}>

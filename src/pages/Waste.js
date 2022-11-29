@@ -22,7 +22,7 @@ export default function Waste(){
             <div className={wasteCss.introductionDiv}>
                 <h2>Expert waste management in Ayrshire</h2>
                 <p>At D.W Parker Skip Hire we are SEPA registered and fully qualified for waste disposal in Ayrshire. We are licensed to collect all types of waste and safely and securely dispose of it. We can dispose of both domestic and commercial waste. We can collect waste from your property and transport it to our site where the majority of the waste is recycled. The rest of the waste is transported and disposed of in environmentally friendly landfill sites.</p>
-                <p>We are licensed to safely dispose of non-hazardous waste in Ayrshire and specialise in property clearances. We are also authorised aggregate and soil haulage carriers for loads of anywhere between 1 and 20 tonnes.</p>
+                <p>We are licensed to safely dispose of non-hazardous waste. </p>
             </div>
             <div className={wasteCss.outerPanelDiv}>
                 <div className={wasteCss.panelDiv}>

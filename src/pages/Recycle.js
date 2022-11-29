@@ -2,14 +2,17 @@ import recycleCss from '../css/recycle.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 import icon from '../media/icon.svg';
+
 import sandstone from '../images/sandstone.jpg';
 import brick from '../images/crushedBrick.jpg';
 import tarPile from '../images/tarPlaningsPile.jpg';
 import typeOne from '../images/typeOne.jpg';
 import whinDust from '../images/whinDust.jpg';
+import soil from '../images/soil.jpg';
 
 import tarPlanings from '../images/tarPlanings.jpg';
 import tipperDriver from '../images/tipperDriver.jpg';
+import environment from '../images/environment.jpg';
 
 import { Blurhash} from "react-blurhash";
 
@@ -60,7 +63,13 @@ export default function Recycle(){
                     </div>
                     <div className={recycleCss.panel}>
                         <div className={recycleCss.panelImg}>
-
+                            <Blurhash
+                                hash="LLE.%=9bE4xY%%oIbHWC03-T$|R-"
+                                width
+                                height
+                                id={recycleCss.hashImg}
+                            />
+                            <img loading="lazy" src={environment} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="sunrise over D.W.Parker Skip Hire" />
                         </div>  
                         <div className={recycleCss.panelText} id={recycleCss.panel2}>
                             <h3>Environmentally friendly disposal for your garden waste</h3>
@@ -86,6 +95,13 @@ export default function Recycle(){
             </div>
             <div className={recycleCss.materialDiv}>
                 <div className={recycleCss.materialElem}>
+                    <Blurhash
+                        hash="LYBp;8?Z%LoI_4%Kt7jYp0RjWBWC"
+                        width
+                        height
+                        id={recycleCss.hashImg}
+                    />
+                    <img loading="lazy" src={soil} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="soil" />
                     <div className={recycleCss.materialTextbox}>
                         <h3>Soil</h3>
                     </div>

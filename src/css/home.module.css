@@ -73,8 +73,7 @@
     position: absolute;
     top: 50%;
     left: 105%;
-    transform: translate(-50%, -50%);
-    transform: scaleX(-1);
+    transform: translate(-50%, -50%) rotate(180deg);
 }
 
 .leftArrow{
@@ -108,6 +107,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .headerDiv{
@@ -163,6 +163,7 @@
     align-items: center;
     padding-top: 2em;
     padding-bottom: 2em;
+    background-color: white;
 }
 
 .panelDiv{
@@ -205,6 +206,10 @@
     position: absolute;
 }
 
+#middleHashImg{
+
+}
+
 .infoImgCover{
     width: 100%;
     height: 100%;
@@ -213,6 +218,38 @@
     position: absolute;
     left: 0;
     transition: all 4s ease;
+}
+
+.middleImgCover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.midImage1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    overflow: hidden;
+}
+
+.midImage2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.midImage3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .imgInvisible{
@@ -323,19 +360,22 @@
     }
 }
 
-
-.middleImageContainer{
-    max-height: 500px;
-    aspect-ratio: 1.7/1;
-    width: 100%;
-    overflow: hidden;
-
-    background-color: grey;
-    position: relative;
+.parallaxHolder{
+    width: 100vw;
+    height: 100vh;
 }
 
+.parallax1{
+    background: url('../images/tipper.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-
+.innerParallax{
+    height: 300px;
+}
 
 .socialDiv
 {

@@ -62,7 +62,7 @@ function Faq(){
                     <div className={faqCss.question}>
                     <img className={faqCss.iconStyle} src={pie} loading="lazy" alt="pie chart icon"/>
                         <h4>If I only need the skip for one day is it cheaper?</h4>
-                        <p>No, the price is still the same. As it is same amount of rubbish we need to process in the correct manor. We do however pride ourselves on helping you, the customer out as much as possible.  On request we can drop off and pick up the skip on the same day, we also offer a wait and load service.</p>
+                        <p>No, the price is still the same. As it is same amount of rubbish we need to process in the correct manner. We do however pride ourselves on helping you, the customer out as much as possible.  On request we can drop off and pick up the skip on the same day, we also offer a wait and load service.</p>
                     </div>
                     <div className={faqCss.question}>
                     <img className={faqCss.iconStyle} src={recycle} loading="lazy" alt="recycle icon"/>

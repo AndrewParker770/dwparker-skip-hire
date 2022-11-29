@@ -5,11 +5,13 @@ import icon from '../media/icon.svg';
 
 import skipSequence from '../images/skipSequence.jpg';
 import lorryRow from '../images/lorryRow.jpg';
-import individualLorry from '../images/individualLorry.jpg';
+
 import twoLorries from '../images/twoLorries.jpg';
 
 import individualSkip from '../images/individualSkip.jpg';
 import enclosedLoaded from '../images/enclosedLoaded.jpg';
+import bin from '../images/bin.jpg';
+import drop from '../images/dropDoor.jpg';
 
 import { Blurhash} from "react-blurhash";
 
@@ -32,7 +34,7 @@ export default function Skips(){
                 <div className={skipsCss.headerDiv}>
                     <img className={skipsCss.iconStyle} src={icon} alt="logo of DWP"/>
                     <h1>Do you want to hire a skip?</h1>
-                    <p>At D.W Parker Skip Hire, we offer a range of skips for hire, based in Ardrossan, Ayrshire, why not get in touch today?</p>
+                    <p>At D.W Parker Skip Hire, we offer a range of skips for hire throughout Ayrshire. Why not get in touch today?</p>
                 </div>
             </div>
             <div className={skipsCss.introductionDiv}>
@@ -75,7 +77,7 @@ export default function Skips(){
                         </div>  
                         <div className={skipsCss.panelText}>
                             <h3>What we offer</h3>
-                            <p>At D.W Parker Skip Hire we stock a wide range of skips that are suitable for needs of all sizes. Our skips are suitable for anything from small, house clearances to large scale building site waste disposal. We stock both midi and maxi skips and our experts are available to give advice on the best skip for your needs. We supply skips of all sizes from 4, 6, 8, 12 and 16 standard skips to 15, 20 and 40 cubic yard ROLO options.</p>
+                            <p>At D.W Parker Skip Hire we stock a wide range of skips that are suitable for needs of all sizes. Our skips are suitable for anything from small, house clearances to large scale building site waste disposal. We stock both midi and maxi skips and our experts are available to give advice on the best skip for your needs. We supply skips of all sizes from 4, 8, 12 and 16 standard skips to 15, 20 and 40 cubic yard ROLO options.</p>
                         </div>
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel4}>
@@ -106,19 +108,19 @@ export default function Skips(){
                 <div className={skipsCss.infoContainer}>
                     <div className={skipsCss.skipInfo}>
                         <h4>4 Yard Skip</h4>
-                        <p>4 yard skip also known as the midi skip. The dimensions are approximately 7 ft in length x 5 ft in width x 4 ft in height. These skips can hold your domestic waste up to 4 tones or 40 to 50 black bin bags. Besides these, they can hold 15 to 18 wheelbarrows.</p>
+                        <p></p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>8 Yard Skip</h4>
-                        <p>8 yard skip known as a builders skips. 8 yard skips can carry a moderate amount of waste from your kitchen or bathroom. These skips can hold eight tones of waste and 60-70 black bin bags. The dimensions of 8 yard skips are 12 ft length x 6 ft width x 4.5 ft height.</p>
+                        <p></p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>12 Yard Skip</h4>
-                        <p>12 yard skips are best for industrial purposes. The skip holds 120 tonnes, or 120 to 130 black bin bags. These skips are handy to get rid of a large amount of waste. The dimensions of these skips are 13 ft length x 6 ft width x 6.5 ft height.</p>
+                        <p></p>
                     </div>
                     <div className={skipsCss.skipInfo}>
-                        <h4>15 Yard Bin</h4>
-                        <p>15 yard bin is the best solution for waste removal for more massive house clean ups, destruction, renovations and also used to carry a vast amount of waste from building areas. 15 yard bins can hold 170 to 180 black bin bags and the dimension 13.5 ft length x 6 ft width x 6.5 ft height.</p>
+                        <h4></h4>
+                        <p></p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>20 Yard Bin</h4>
@@ -156,21 +158,27 @@ export default function Skips(){
                     </div>
                 </div>
                 <div className={skipsCss.skipDisplayElem}>
-                    
+                    <Blurhash
+                        hash="LyAnm4RkWUjEt:ayj?jYN2ofofbI"
+                        width
+                        height
+                        id={skipsCss.hashImg}
+                    />
+                    <img loading="lazy" src={bin} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="lorry carrying bin" />
                     <div className={skipsCss.skipDisplayTextbox}>
                         <h3>Bins</h3>
                     </div>
                 </div>
                 <div className={skipsCss.skipDisplayElem}>
                     <Blurhash
-                        hash="LXG+RDIVxuoH~qt7R*j?-:%LWCM}"
+                        hash="LuF6IQa}Rkog_4WBWVj]o#Rjt7WB"
                         width
                         height
                         id={skipsCss.hashImg}
                     />
-                    <img loading="lazy" src={individualLorry} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="individual D.W Parker Lorry" />
+                    <img loading="lazy" src={drop} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="ldrop door skip" />
                     <div className={skipsCss.skipDisplayTextbox}>
-                        <h3>Lorries</h3>
+                        <h3>Drop Door</h3>
                     </div>
                 </div>
             </div>

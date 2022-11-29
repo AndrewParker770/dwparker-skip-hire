@@ -24,8 +24,8 @@ export default function Contact2(){
                 <div className={contactCss.headerDiv}>
                     <img className={contactCss.iconStyle} src={icon} alt="logo of DWP"/>
                     <h1>Choose from a range of skip sizes in Ayrshire</h1>
-                    <p>We offer a range of skip sizes for you to choose from. We supply skips of all sizes from 4,6,8,12,16 standard skips to 15, 20 and 40 ROLO skips. For skip hire for all your commercial and domestic needs in Ayrshire and surrounding areas, contact D.W Parker Skip Hire today.</p>
-                    <p>Contact us Monday to Friday from 7am to 5pm and Saturday 7am to 12pm.</p>
+                    <p>We offer a range of skip sizes for you to choose from. We supply skips of all sizes from 4,8,12,16 standard skips to 15, 20 and 40 ROLO skips. For skip hire for all your commercial and domestic needs in Ayrshire and surrounding areas, contact D.W Parker Skip Hire today.</p>
+                    <p>Contact us Monday to Friday from 6am to 5pm and Saturday 8am to 12pm.</p>
                 </div>
             </div>
             <div className={contactCss.outerDetailDiv}>

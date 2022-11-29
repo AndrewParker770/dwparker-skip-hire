@@ -59,7 +59,7 @@ export default function Team(){
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Skip Lorry drivers</h3>
-                            <p>Working with us we have 3 full time skip lorry drivers working hard to get your skips delivered to you.  With 2 part time drivers and 1 new member of the team learning.</p>
+                            <p>Working with us we have 3 full time skip lorry drivers working hard to get your skips delivered to you.</p>
                         </div>
                     </div>
                     <div className={teamCss.panel}>

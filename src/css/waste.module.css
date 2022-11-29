@@ -72,10 +72,11 @@
 
 .introductionDiv > h2{
     padding-bottom: 0.5em;
+    text-align: center;
 }
 
 .introductionDiv > p{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--body-text-colour);
     padding-top: 0.5em;
     width: 100%;

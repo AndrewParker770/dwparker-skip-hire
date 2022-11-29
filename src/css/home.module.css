@@ -373,8 +373,25 @@
     background-size: cover;
 }
 
+.parallax2{
+    background: url('../images/threeLorries.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.parallax3{
+    background: url('../images/lineUp.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .innerParallax{
-    height: 300px;
+    aspect-ratio: 1.7/1;
+    max-height: 300px;
 }
 
 .socialDiv

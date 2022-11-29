@@ -19,10 +19,6 @@ import pulmonaryFibSkip from './images/pulmonaryFibSkip.jpg';
 import newSkips from './images/newSkips.jpg';
 import enclosedLowering from './images/enclosedLowering.jpg';
 
-import tipper from './images/tipper.jpg';
-import snowy from './images/snowy.jpg';
-import lineUp from './images/lineUp.jpg';
-
 import facebook from './media/facebookIcon.svg'
 import instagram from './media/instaIcon.svg'
 import { Link } from 'react-router-dom';
@@ -104,23 +100,10 @@ function Home() {
           </div>
       </div>
 
-      <div className={`${homeCSS.parallax1}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}}>
-            <Blurhash
-            hash="LjEy*;%J-:of%%xstRt6bxt7a$f9"
-            width
-            height
-            id={`${homeCSS.middleHashImg}`}
-            />
-            <div className={`${homeCSS.innerParallax}`}>
-
-            </div>
+      <div className={`${homeCSS.parallax1}`} loading={"lazy"}>
+            <div className={`${homeCSS.innerParallax}`}/>
       </div>
-      {/* <div className={homeCSS.parallaxHolder}>
-        {/* 
-        />
-        <div className={`${homeCSS.parallax} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} />
-      </div> */}
-
+      
       <div className={homeCSS.outerPanelDiv}>
         <div className={homeCSS.panelDiv}>
           <div className={homeCSS.panel}>
@@ -180,8 +163,8 @@ function Home() {
         </div>
       </div>
 
-      <div className={homeCSS.parallax}>
-        
+      <div className={`${homeCSS.parallax2}`} loading={"lazy"}>
+            <div className={`${homeCSS.innerParallax}`}/>
       </div>
 
       <div className={homeCSS.outerPanelDiv}>
@@ -243,8 +226,8 @@ function Home() {
         </div>
       </div>
 
-      <div className={homeCSS.parallax}>
-        
+      <div className={`${homeCSS.parallax3}`} loading={"lazy"}>
+            <div className={`${homeCSS.innerParallax}`}/>
       </div>
 
       <div className={homeCSS.socialDiv}>

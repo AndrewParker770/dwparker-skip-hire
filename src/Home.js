@@ -50,19 +50,15 @@ function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const decreaseIndex = () => {
-    const atFirstIndex = (currentIndex === 0);
-    const newIndex = (atFirstIndex ? images.length -1 : currentIndex -1);
-    setCurrentIndex(newIndex);
+  function decreaseIndex (){
+    setCurrentIndex(prev => prev === 0 ? images.length - 1 : prev - 1 );
   }
 
-  const increaseIndex = () => {
-    const atLastIndex = (currentIndex === images.length -1);
-    const newIndex = (atLastIndex ? 0: currentIndex + 1);
-    setCurrentIndex(newIndex);
+  function increaseIndex () {
+    setCurrentIndex(prev => prev + 1 === images.length ? 0 : prev + 1 );
   }
 
-  const setIndex = (chosenIndex) => {
+  function setIndex (chosenIndex){
     setCurrentIndex(chosenIndex);
   }
 
@@ -74,7 +70,7 @@ function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      increaseIndex();
+      setCurrentIndex(prev => prev + 1 === images.length ? 0 : prev + 1 );
     }, 15000);
     return () => clearInterval(interval);
   }, []);

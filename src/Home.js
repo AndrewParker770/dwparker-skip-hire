@@ -72,6 +72,13 @@ function Home() {
     displayImgRef.current.classList.add(`${homeCSS.imgInvisible}`);
   }, [currentIndex]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      increaseIndex();
+    }, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
   
   return (
     <div className={homeCSS.homePageDiv}>

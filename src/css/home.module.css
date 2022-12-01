@@ -219,6 +219,10 @@ body, html {
     transition: all 4s ease;
 }
 
+.imgInvisible{
+    opacity: 0;
+}
+
 .panelText{
     display: flex;
     flex-direction: column;
@@ -348,7 +352,7 @@ body, html {
     .parallax {
       background-attachment: scroll;
     }
-  }
+}
 
 .innerParallax{
     aspect-ratio: 1.7/1;

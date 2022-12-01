@@ -88,12 +88,12 @@ function Home() {
         />
         <img key={Date.now()} ref={displayImgRef} loading="lazy" src={images[currentIndex]['img']} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt={images[currentIndex]['alt']} />
         <div className={homeCSS.setIndexContainer}>
-          {images.map( (image, imageIndex) => (
+          {images.map( (_, imageIndex) => (
               <div key={imageIndex} onClick={() => (setIndex(imageIndex))} className={currentIndex === imageIndex ? `${homeCSS.indexDot} ${homeCSS.selectedDot}` : `${homeCSS.indexDot}`}></div>
             ))}
         </div>
-        <img src={arrow} className={`${homeCSS.arrow} ${homeCSS.rightArrow}`} onClick={increaseIndex} />
-        <img src={arrow} className={`${homeCSS.arrow} ${homeCSS.leftArrow}`} onClick={decreaseIndex} />
+        <img src={arrow} className={`${homeCSS.arrow} ${homeCSS.rightArrow}`} onClick={increaseIndex} alt='right arrow'/>
+        <img src={arrow} className={`${homeCSS.arrow} ${homeCSS.leftArrow}`} onClick={decreaseIndex} alt='left arrow'/>
       </div>
       <div className={homeCSS.headerContainer}>
           <div className={homeCSS.headerDiv}>
@@ -103,9 +103,7 @@ function Home() {
           </div>
       </div>
 
-      <div className={`${homeCSS.parallax1}`} loading={"lazy"}>
-            <div className={`${homeCSS.innerParallax}`}/>
-      </div>
+      <div className={`${homeCSS.parallax1} ${homeCSS.parallax}`} loading={"lazy"}/>
       
       <div className={homeCSS.outerPanelDiv}>
         <div className={homeCSS.panelDiv}>
@@ -166,9 +164,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={`${homeCSS.parallax2}`} loading={"lazy"}>
-            <div className={`${homeCSS.innerParallax}`}/>
-      </div>
+      <div className={`${homeCSS.parallax2} ${homeCSS.parallax}`} loading={"lazy"}/>
 
       <div className={homeCSS.outerPanelDiv}>
         <div className={homeCSS.panelDiv}>
@@ -229,9 +225,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={`${homeCSS.parallax3}`} loading={"lazy"}>
-            <div className={`${homeCSS.innerParallax}`}/>
-      </div>
+      <div className={`${homeCSS.parallax3} ${homeCSS.parallax} `} loading={"lazy"}/>
 
       <div className={homeCSS.socialDiv}>
         <div className={homeCSS.socialContainer}>

@@ -13,6 +13,9 @@
     --alter-background: rgb(241,241,241);
 }
 
+body, html {
+    height: 100%;
+}
 
 .headImageContainer{
     max-height: 500px;
@@ -206,10 +209,6 @@
     position: absolute;
 }
 
-#middleHashImg{
-
-}
-
 .infoImgCover{
     width: 100%;
     height: 100%;
@@ -218,42 +217,6 @@
     position: absolute;
     left: 0;
     transition: all 4s ease;
-}
-
-.middleImgCover{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.midImage1{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -3;
-    overflow: hidden;
-}
-
-.midImage2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    overflow: hidden;
-}
-
-.midImage3{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.imgInvisible{
-    opacity: 0;
 }
 
 .panelText{
@@ -360,34 +323,32 @@
     }
 }
 
-.parallaxHolder{
-    width: 100vw;
-    height: 100vh;
+.parallax{
+    min-height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax1{
-    background: url('../images/tipper.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url('../images/tipper.jpg');
 }
 
 .parallax2{
-    background: url('../images/threeLorries.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url('../images/threeLorries.jpg');
 }
 
 .parallax3{
-    background: url('../images/lineUp.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url('../images/lineUp.jpg');
 }
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
 
 .innerParallax{
     aspect-ratio: 1.7/1;

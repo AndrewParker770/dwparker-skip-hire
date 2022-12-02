@@ -141,12 +141,14 @@ a
 #contactPointer{
     text-decoration: underline;
     cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 #contactPointer:hover,
 #contactPointer:focus
 {
-    color: var(--tel-highlightes-text);
+    font-size: 20px;
+    color: rgb(125, 120, 120);
 }
 
 .navbarBody, #headerBlock

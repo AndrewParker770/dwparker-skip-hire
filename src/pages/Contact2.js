@@ -1,7 +1,7 @@
 import contactCss from '../css/contactpage.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
-import icon from '../media/icon.svg';
+import recycleColour from '../media/recycleColours.svg';
 
 import facebook from '../media/facebookIcon.svg';
 import instagram from '../media/instaIcon.svg';
@@ -22,7 +22,7 @@ export default function Contact2(){
             </div>
             <div className={contactCss.headerContainer}>
                 <div className={contactCss.headerDiv}>
-                    <img className={contactCss.iconStyle} src={icon} alt="logo of DWP"/>
+                    <img className={contactCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                     <h1>Choose from a range of skip sizes in Ayrshire</h1>
                     <p>We offer a range of skip sizes for you to choose from. We supply skips of all sizes from 4,8,12,16 standard skips to 15, 20 and 40 ROLO skips. For skip hire for all your commercial and domestic needs in Ayrshire and surrounding areas, contact D.W Parker Skip Hire today.</p>
                     <p>Contact us Monday to Friday from 6am to 5pm and Saturday 8am to 12pm.</p>

@@ -3,7 +3,7 @@ import React from 'react';
 import homeCSS from './css/home.module.css'
 import ScrollToTopOnMount from './ScrollToTopOnMount';
 
-import icon from './media/icon.svg';
+import recycleColour from './media/recycleColours.svg';
 import arrow from './media/arrow.svg';
 
 import skipSequence from './images/skipSequence.jpg';
@@ -42,10 +42,10 @@ function Home() {
   }
 
   const images = [
-    {'img' : newSkips, 'alt': "lorry full of new skips", 'blur': "LqGScXM_t7Rj_4WBWAkCxta}WCoe"},
-    {'img' : sign, 'alt': "D.W.Parker Sign", 'blur': "LTCjq=MzT0xuEraxa#WB8^xZwaM|"},
     {'img' : pulmonaryFibSkip, 'alt': "Skips in support of pulmonary fibrosis", 'blur': "LhDAcf%hx_odKnNfXAoc%LxZRjWA"},
-    {'img': enclosedLowering, 'alt': "Enclosed skip being lowered", 'blur': "LnGbk]S$xts8_4jZkDbIX8nhWCSh"}
+    {'img': enclosedLowering, 'alt': "Enclosed skip being lowered", 'blur': "LnGbk]S$xts8_4jZkDbIX8nhWCSh"},
+    {'img' : newSkips, 'alt': "Lorry full of new skips", 'blur': "LqGScXM_t7Rj_4WBWAkCxta}WCoe"},
+    {'img' : sign, 'alt': "D.W.Parker Sign", 'blur': "LTCjq=MzT0xuEraxa#WB8^xZwaM|"}
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,7 +97,7 @@ function Home() {
       </div>
       <div className={homeCSS.headerContainer}>
           <div className={homeCSS.headerDiv}>
-              <img className={homeCSS.iconStyle} src={icon} alt="logo of DWP"/>
+              <img className={homeCSS.iconStyle} src={recycleColour} alt="logo of DWP"/>
               <h1>Delivering Skips across Ayrshire</h1>
               <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ayrshire and surrounding areas.</p>
           </div>

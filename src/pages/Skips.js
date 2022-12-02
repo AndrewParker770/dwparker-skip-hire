@@ -1,12 +1,13 @@
 import skipsCss from '../css/skips.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
-import icon from '../media/icon.svg';
+import recycleColour from '../media/recycleColours.svg';
+import twoLorries from '../images/twoLorries.jpg';
 
 import skipSequence from '../images/skipSequence.jpg';
 import lorryRow from '../images/lorryRow.jpg';
-
-import twoLorries from '../images/twoLorries.jpg';
+import lorryAndVan from '../images/lorryAndVan.jpg';
+import sign from '../images/sign.jpg';
 
 import individualSkip from '../images/individualSkip.jpg';
 import enclosedLoaded from '../images/enclosedLoaded.jpg';
@@ -32,7 +33,7 @@ export default function Skips(){
             </div>
             <div className={skipsCss.headerContainer}>
                 <div className={skipsCss.headerDiv}>
-                    <img className={skipsCss.iconStyle} src={icon} alt="logo of DWP"/>
+                    <img className={skipsCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                     <h1>Do you want to hire a skip?</h1>
                     <p>At D.W Parker Skip Hire, we offer a range of skips for hire throughout Ayrshire. Why not get in touch today?</p>
                 </div>
@@ -49,7 +50,13 @@ export default function Skips(){
                 <div className={skipsCss.panelDiv}>
                     <div className={skipsCss.panel}>
                         <div className={skipsCss.panelImg}>
-                            
+                            <Blurhash
+                                hash="LkE{kcE8WYoeX=ofj[az5E%1oeWV"
+                                width
+                                height
+                                id={skipsCss.hashImg}
+                            />
+                            <img loading="lazy" src={lorryAndVan} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="lorry and van" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel1}>
                             <h3>Skip hire to suit your needs</h3>
@@ -73,7 +80,13 @@ export default function Skips(){
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel3}>
                         <div className={skipsCss.panelImg}>
-                            
+                            <Blurhash
+                                hash="LTCjq=MzT0xuEraxa#WB8^xZwaM|"
+                                width
+                                height
+                                id={skipsCss.hashImg}
+                            />
+                            <img loading="lazy" src={sign} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="D.W.Parker Sign" />
                         </div>  
                         <div className={skipsCss.panelText}>
                             <h3>What we offer</h3>

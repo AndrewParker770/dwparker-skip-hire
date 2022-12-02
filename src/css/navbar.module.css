@@ -135,12 +135,12 @@ a
 .contactNumbers > ul > li
 {
     color: var(--tel-text);
-    text-decoration: underline;
-    cursor: pointer;
+    font-size: 18px;
 }
 
 #contactPointer{
-    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #contactPointer:hover,

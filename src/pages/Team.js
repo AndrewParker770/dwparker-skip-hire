@@ -1,12 +1,13 @@
 import teamCss from '../css/team.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
-import icon from '../media/icon.svg';
+import recycleColour from '../media/recycleColours.svg';
 import threeLorries from '../images/threeLorries.jpg';
 
 import tractor from '../images/tractor.jpg';
 import tipperDriver from '../images/tipperDriver.jpg';
 import skipLorryDriver from '../images/skipLorryDriver.jpg';
+import yardMen from '../images/yardMen.jpg';
 
 import { Blurhash} from "react-blurhash";
 
@@ -27,7 +28,7 @@ export default function Team(){
             </div>
             <div className={teamCss.headerContainer}>
                 <div className={teamCss.headerDiv}>
-                    <img className={teamCss.iconStyle} src={icon} alt="logo of DWP"/>
+                    <img className={teamCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                     <h1>Meet Our Team</h1>
                 </div>
             </div>
@@ -89,7 +90,14 @@ export default function Team(){
                     </div>
                     <div className={teamCss.panel}>
                         <div className={teamCss.panelImg}>
-
+                            <Blurhash
+                                hash="L?9+BabdoKjYk]kCj@axN2n~WWof"
+                                width
+                                height
+                                id={`${teamCss.hashImg} ${teamCss.tipperImage}`}
+                                className={teamCss.headImage}
+                            />
+                            <img loading="lazy" src={yardMen} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="yard man operating tipper" />
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Yard Men</h3>

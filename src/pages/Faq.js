@@ -1,6 +1,7 @@
 import faqCss from '../css/faq.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
-import icon from '../media/icon.svg';
+
+import recycleColour from '../media/recycleColours.svg';
 
 import alarm from '../media/alarm.svg';
 import trash from '../media/trash.svg';
@@ -9,13 +10,16 @@ import calendar from '../media/calendar.svg';
 import hourglass from '../media/hourglass.svg';
 import recycle from '../media/recycle.svg';
 import pie from '../media/pie_chart.svg';
+import traffic from '../media/trafficCone.svg';
+import hidden from '../media/hidden.svg';
+
 
 function Faq(){
     return(
         <div className={faqCss.faqOuter}>
             <ScrollToTopOnMount/>
             <div className={faqCss.faqHeaderDiv}>
-                <img className={faqCss.iconStyle} src={icon} alt="logo of DWP"/>
+                <img className={faqCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                 <h1>Frequently Asked Questions</h1>
                 <p>See some common questions and answers below, or for more information call us at 01294 463597.</p>
             </div>
@@ -60,14 +64,24 @@ function Faq(){
                         <p>We usually need just one days notice and, on occasion, we can deliver same day. During busier times, please leave 2-3 days notice.</p>
                     </div>
                     <div className={faqCss.question}>
-                    <img className={faqCss.iconStyle} src={pie} loading="lazy" alt="pie chart icon"/>
+                        <img className={faqCss.iconStyle} src={pie} loading="lazy" alt="pie chart icon"/>
                         <h4>If I only need the skip for one day is it cheaper?</h4>
                         <p>No, the price is still the same. As it is same amount of rubbish we need to process in the correct manner. We do however pride ourselves on helping you, the customer out as much as possible.  On request we can drop off and pick up the skip on the same day, we also offer a wait and load service.</p>
                     </div>
                     <div className={faqCss.question}>
-                    <img className={faqCss.iconStyle} src={recycle} loading="lazy" alt="recycle icon"/>
+                        <img className={faqCss.iconStyle} src={recycle} loading="lazy" alt="recycle icon"/>
                         <h4>What happens to my rubbish?</h4>
                         <p>After we collect your skip we bring it back to our waste transfer station located at our site in Ardrossan. We sort through your rubbish and recycle as much as possible.</p>
+                    </div>
+                    <div className={faqCss.question}>
+                        <img className={faqCss.iconStyle} src={traffic} loading="lazy" alt="recycle icon"/>
+                        <h4>What is a skip permit and do I need one?</h4>
+                        <p>If a skip has to sit on council owned land then it needs a permit which carries an additional charge. If the skip can sit on private land, such as a garden or driveway, then no permit is needed.</p>
+                    </div>
+                    <div className={faqCss.question}>
+                        <img className={faqCss.iconStyle} src={hidden} loading="lazy" alt="recycle icon"/>
+                        <h4>Are there any hidden costs to hiring a skip?</h4>
+                        <p>There are no hidden costs to our skip hire. Our quote is for a level full skip for a week's hire. Delivery and uplift are included.</p>
                     </div>
                 </div>
             </div>

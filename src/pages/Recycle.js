@@ -1,7 +1,8 @@
 import recycleCss from '../css/recycle.module.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
-import icon from '../media/icon.svg';
+import recycleColour from '../media/recycleColours.svg';
+import individualLorry from '../images/individualLorry.jpg';
 
 import sandstone from '../images/sandstone.jpg';
 import brick from '../images/crushedBrick.jpg';
@@ -22,11 +23,18 @@ export default function Recycle(){
         <div>
             <ScrollToTopOnMount/>
             <div className={recycleCss.headImageContainer}>
-                 
+                <Blurhash
+                    hash="LfEpD{n#s,of.AWBaej[SkWYWBWB"
+                    width
+                    height
+                    id={recycleCss.hashImg}
+                    className={recycleCss.headImage}
+                />
+                <img loading="lazy" src={individualLorry} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible} ${recycleCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="new skips arriving" />
             </div>
             <div className={recycleCss.headerContainer}>
                 <div className={recycleCss.headerDiv}>
-                    <img className={recycleCss.iconStyle} src={icon} alt="logo of DWP"/>
+                    <img className={recycleCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                     <h1>Recycled Materials</h1>
                     <p>At D.W Parker Skip Hire, we offer recycled aggregates to all customer, delivering throughout Ayrshire including Ardrossan, Irvine, Prestwick, Ayr, Kilmarnock and all in between.</p>
                 </div>

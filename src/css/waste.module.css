@@ -13,7 +13,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 100% 60%;
+    object-position: 100% 35%;
 }
 
 .iconStyle{
@@ -57,6 +57,8 @@
         transform: translateY(-50px);
     }
 }
+
+
 
 .introductionDiv{
     display: flex;
@@ -107,33 +109,73 @@
     padding: 1em;
 }
 
+.panelDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em ;
+    row-gap: 1em ;
+    padding: 1em;
+    max-width: 95%;
+}
+
 .panel{
     box-shadow: 0px 1px 10px rgb(159, 153, 153);
     flex: 1;
+    display: flex;
+    flex-direction: column;
     border-radius: 5%;
 
-    
     overflow: hidden;
 }
 
 .panelImg{
-    background-color: rgb(141, 134, 134);
     aspect-ratio: 1.8 /1;
+    max-height: 300px;
 
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+
+    position: relative;
+}
+
+#hashImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+.infoImgCover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    transition: all 4s ease;
+}
+
+.imgInvisible{
+    opacity: 0;
+}
+
+.snowyImg{
+    object-position: 100% 25%;
 }
 
 .panelText{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    height: 100%;
 
     padding: 2em;
     padding-top: 1em;
     color: white;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .panelText > h3, p{

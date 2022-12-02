@@ -106,7 +106,7 @@ function Navbar() {
           <div className={navbarCSS.contactNumbers}>
             <ul>
               <li id={navbarCSS.contactPhoneNumber}>{phone_number}</li>
-              <li id={navbarCSS.contactPointer}><a href="mailto:{email}"> {email}</a></li>
+              <li id={navbarCSS.contactPointer}><a href={`mailto:${email}`}>{email}</a></li>
             </ul>
           </div>
         </div>

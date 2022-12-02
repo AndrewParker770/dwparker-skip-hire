@@ -365,10 +365,10 @@ body, html {
 {
     display: flex;
     justify-content: left;
-    background-color: var(--alter-background);
     padding: 10%;
     padding-top: 2em;
     padding-bottom: 2em;
+    background-color: var(--alter-background);
 }
 
 .socialContainer
@@ -376,8 +376,9 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    font-family: 'Open Sans', sans-serif;
     max-width: 800px;
+    font-family: 'Bebas Neue', 'Helvetica';
+    padding: 2em;
 }
 
 .socialButtons
@@ -385,6 +386,8 @@ body, html {
     display: flex;
     flex-direction: row;
     transform: translateX(-5px);
+    align-items: center;
+    justify-content: center;
 }
 
 .socialIconStyle
@@ -395,13 +398,13 @@ body, html {
 .socialTitle
 {
     color: var(--regular-text);
+    text-align: center;
 }
 
 .socialHighlight
 {
     font-weight: 600;
-    color: var(--sign-colour-blue);
-    text-align: left;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -412,7 +415,8 @@ body, html {
 .socialParagraph
 {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
+    max-width: 600px;
 }
 
 .socialImage
@@ -433,26 +437,32 @@ body, html {
     }
 }
 
+.outerContactPanel
+{
+    background-color: var(--alter-background);
+}
+
 .contactPanel
 {
-    background-color: var(--sign-colour-red);
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
 
     padding: 2em;
+    background-color: var(white);
 }
 
 .contactPanel > h2
 {
-    color: white;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 25px;
     max-width: 900px;
     font-weight: 100;
+    max-width: calc(600px + 4em);
 }
 
 .contactPanelBold

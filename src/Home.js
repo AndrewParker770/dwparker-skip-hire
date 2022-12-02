@@ -103,7 +103,7 @@ function Home() {
           </div>
       </div>
 
-      <div className={`${homeCSS.parallax1} ${homeCSS.parallax}`} loading={"lazy"}/>
+      <div className={`${homeCSS.parallax1} ${homeCSS.parallax}`} loading="lazy"/>
       
       <div className={homeCSS.outerPanelDiv}>
         <div className={homeCSS.panelDiv}>
@@ -164,7 +164,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={`${homeCSS.parallax2} ${homeCSS.parallax}`} loading={"lazy"}/>
+      <div className={`${homeCSS.parallax2} ${homeCSS.parallax}`} loading="lazy"/>
 
       <div className={homeCSS.outerPanelDiv}>
         <div className={homeCSS.panelDiv}>
@@ -225,11 +225,11 @@ function Home() {
         </div>
       </div>
 
-      <div className={`${homeCSS.parallax3} ${homeCSS.parallax} `} loading={"lazy"}/>
+      <div className={`${homeCSS.parallax3} ${homeCSS.parallax} `} loading="lazy"/>
 
       <div className={homeCSS.socialDiv}>
         <div className={homeCSS.socialContainer}>
-          <h2 className={homeCSS.socialTitle}>Follow us on social media</h2>
+          <h1 className={homeCSS.socialTitle}>Check out our social media</h1>
           <p className={homeCSS.socialHighlight}>Leave a like or comment</p>
           <div className={homeCSS.socialButtons}>
             <a href={facebookLink}><img className={homeCSS.socialIconStyle} src={facebook} alt="link to DWP facebook page"/></a>
@@ -237,10 +237,6 @@ function Home() {
           </div>
           <p className={homeCSS.socialParagraph}>Follow us to get an insight into our day-to-day operations with regular updates from our team. Leave a like or write a review to help us improve our services.</p>
         </div>
-      </div>
-      <div className={homeCSS.contactPanel}>
-        <h2>Looking for skip hire in Ayrshire? For specialised waste management solutions to professional or domestic needs, contact us at: </h2>
-        <h2><span className={homeCSS.contactPanelBold}>01294 463 597</span> or <span className={homeCSS.contactPanelBold}>07770 563 078</span></h2>
       </div>
     </div>
   );

@@ -113,10 +113,6 @@ export default function Waste(){
                 </div>
                 
             </div>
-            <div className={wasteCss.contactPanel}>
-                    <h2>For rubbish removal and waste management services in Ayrshire, get in touch with D.W Parker Skip Hire on</h2>
-                    <h2><span className={wasteCss.contactPanelBold}>01294 463 597</span> or <span className={wasteCss.contactPanelBold}>07770 563 078</span></h2>
-            </div>
         </div>
     );
 }

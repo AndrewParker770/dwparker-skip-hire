@@ -3,7 +3,10 @@
     --backgorund-colour: rgb(51,48,48);
     --text-colour: white;
 
+    --alter-background: rgb(241,241,241);
+
     --highlighted-text: rgb(47, 47, 163);
+    --sign-colour-red: rgb(207,51,65);
 }
 
 input, button
@@ -43,15 +46,57 @@ h1
 .contactDiv
 {
     background-color: var(--backgorund-colour);
-    padding-top: 10px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 2em;
     padding-bottom: 4em;
     gap: 1em;
+}
+
+.outerIntroDiv
+{
+    background-color: var(--sign-colour-red);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    gap: 0.5em;
+}
+
+.contactIntro
+{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.contactIntro > p
+{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contactSpan
+{
+    font-weight: 900;
+    transition: all 0.4s ease;
+}
+
+.contactSpan:hover{
+    color: var(--alter-background);
+    font-size: 22px;
 }
 
 .overflowFormDiv

@@ -54,6 +54,12 @@ function Contact() {
   
   return (
     <div className={contactCSS.contactDiv}>
+      <div className={contactCSS.outerIntroDiv}>
+        <div className={contactCSS.contactIntro}>
+          <p>For advice on the best skip size for your disposal needs contact D.W Parker Skip Hire today at:</p>
+          <p><a className={contactCSS.contactSpan} href="tel:{phone_number}"> {phone_number}</a> or <a className={contactCSS.contactSpan} href="mailto:{email}"> {email}</a></p>
+        </div>
+      </div>
       <form id={contactCSS.formID} ref={form} className={formState === "unset" ? `${contactCSS.formLayout}` : `${contactCSS.formLayout} ${contactCSS.invisible}`} onSubmit={sendEmail}>
         <h1>Contact Us:</h1>
         <div className={contactCSS.overflowFormDiv}>

@@ -13,8 +13,10 @@ A messaging feature should be added for the user to submit a form in the webpage
 Messaging service should be secure | reCAPTCHAv3 from google was implemented and spamming is safeguarded by EmailJS.|
 One page should display the location of the main site on a map. | Used pigeon maps, a free static map rest API, to display a pin at the location of the site. |
 
+### Contact Form:
 ![ContactFooter](https://user-images.githubusercontent.com/60265517/206943357-7c2fe55d-f622-4057-8948-9475cb050d4b.png)
 
+### Map with Pinned Location:
 ![Map](https://user-images.githubusercontent.com/60265517/206943363-f6d3103b-6452-4a28-9912-3869b2160933.png)
 
 ## Replication

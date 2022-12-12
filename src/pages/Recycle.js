@@ -36,12 +36,8 @@ export default function Recycle(){
                 <div className={recycleCss.headerDiv}>
                     <img className={recycleCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                     <h1>Recycled Materials</h1>
-                    <p>At D.W Parker Skip Hire, we offer recycled aggregates to all customer, delivering throughout Ayrshire including Ardrossan, Irvine, Prestwick, Ayr, Kilmarnock and all in between.</p>
+                    <p>As a result of the waste we recycle we are able to supply a vast array of by-products perfect for relaying lawns, building borders and garden work. These are sold by the tonne and delivered straight to your property for domestic and commercial uses.</p>
                 </div>
-            </div>
-            <div className={recycleCss.introductionDiv}>
-                <h2>Recycled materials for your home</h2>
-                <p>At D.W Parker Skip Hire we aim to recycle the majority of the waste we manage. As a result of the waste we recycle we produce and supply many by-products. These are purchased and used by many in Ayrshire for domestic, garden and business use. We supply and sell our recycled products by the tonne for domestic, garden and business use. Our products are perfect for relaying lawns, building borders and remedial garden work. We can deliver all our products to your property in Ayrshire.</p>
             </div>
             <div className={recycleCss.outerPanelDiv}>
                 <div className={recycleCss.panelDiv}>
@@ -56,8 +52,8 @@ export default function Recycle(){
                             <img loading="lazy" src={tipperDriver} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="tipper driver" />
                         </div>  
                         <div className={recycleCss.panelText} id={recycleCss.panel1}>
-                            <h3>We supply:</h3>
-                            <p>Top soil and quarry aggregate, ideal for use in your garden or for commercial landscaping businesses.</p>
+                            <h3>What We Supply:</h3>
+                            <p>Ideal for use in your garden or for use by commercial landscaping businesses:</p>
                             <ul>
                                 <li>Soil</li>
                                 <li>Whin dust</li>
@@ -66,6 +62,9 @@ export default function Recycle(){
                                 <li>Tar plannings</li>
                                 <li>Stone material</li>
                                 <li>Hard core chips</li>
+                                <li>Sized aggregates</li>
+                                <li>Drainage stone</li>
+                                <li>Top soil</li>
                             </ul>
                         </div>
                     </div>
@@ -80,8 +79,8 @@ export default function Recycle(){
                             <img loading="lazy" src={environment} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="sunrise over D.W.Parker Skip Hire" />
                         </div>  
                         <div className={recycleCss.panelText} id={recycleCss.panel2}>
-                            <h3>Environmentally friendly disposal for your garden waste</h3>
-                            <p>Giving your garden a makeover? We specialise in the safe, environmentally friendly disposal of garden waste. We can collect a variety of waste in Ayrshire and expertly dispose of it for you at highly competitive rates.</p>
+                            <h3>Responsible Disposal Of Garden Waste</h3>
+                            <p>We specialise in the safe, environmentally responsible disposal of garden waste at highly competitive rates.</p>
                         </div>
                     </div>
                     <div className={recycleCss.panel} id={recycleCss.panel3}>
@@ -95,8 +94,8 @@ export default function Recycle(){
                             <img loading="lazy" src={tarPlanings} className={`${recycleCss.infoImgCover} ${recycleCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${recycleCss.imgInvisible}`)}} alt="tar plannings being poursed into bin" />
                         </div>  
                         <div className={recycleCss.panelText}>
-                            <h3>Recycled materials</h3>
-                            <p>At our site located in Ardrossan,  we supply a range of aggregates for household and industrial needs.  We offer competitive prices that are hard to beat elsewhere.  Offering a local delivery service or you can come and collect it yourself from our yard.  To find out more on how we can help you, give us a call.</p>
+                            <h3>Recycled Materials</h3>
+                            <p>At our site in Ardrossan, we supply a range of recycled materials for domestic and commercial requirements, all whilst offering competitive prices. We offer local delivery service or can organise collection from our site. Contact us to find out more about what we supply.</p>
                         </div>
                     </div>
                 </div>

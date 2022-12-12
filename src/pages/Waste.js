@@ -30,13 +30,8 @@ export default function Waste(){
                 <div className={wasteCss.headerDiv}>
                     <img className={wasteCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
                     <h1>Efficient rubbish removal services</h1>
-                    <p>Do you require rubbish removal services in Ayrshire? Contact the professionals from D.W Parker Skip Hire today for a free quote.</p>
+                    <p>We are registered and certified by SEPA as a controlled waste carrier; we are licensed to safely and securely dispose of both domestic and commercial waste. Once collected from your property, your waste is transported it to our site where we sort it out using manual labour and our mechanical picking stations, with the majority of the result being recycled. Any non-recyclable waste is properly disposed of in ecologically responsible landfill sites.</p>
                 </div>
-            </div>
-            <div className={wasteCss.introductionDiv}>
-                <h2>Expert waste management in Ayrshire</h2>
-                <p>At D.W Parker Skip Hire we are SEPA registered and fully qualified for waste disposal in Ayrshire. We are licensed to collect all types of waste and safely and securely dispose of it. We can dispose of both domestic and commercial waste. We can collect waste from your property and transport it to our site where the majority of the waste is recycled. The rest of the waste is transported and disposed of in environmentally friendly landfill sites.</p>
-                <p>We are licensed to safely dispose of non-hazardous waste. </p>
             </div>
             <div className={wasteCss.outerPanelDiv}>
                 <div className={wasteCss.panelDiv}>
@@ -51,15 +46,13 @@ export default function Waste(){
                             <img loading="lazy" src={lorryAndVan} className={`${wasteCss.infoImgCover} ${wasteCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${wasteCss.imgInvisible}`)}} alt="van and lorry" />
                         </div>  
                         <div className={wasteCss.panelText} id={wasteCss.panel1}>
-                            <h3>We recycle and safely dispose of many types of waste:</h3>
+                            <h3>Types Of Waste</h3>
+                            <p>We recycle and safely dispose of many types of waste:</p>
                             <ul>
-                                <li>Building waste disposal</li>
-                                <li>Paper and cardboard disposal</li>
-                                <li>Commercial waste disposal</li>
-                                <li>Construction waste disposal</li>
-                                <li>Plastic waste disposal</li>
-                                <li>Domestic and garden waste disposal</li>
+                                <li>Construction and Demolition</li>
                                 <li>Property clearance</li>
+                                <li>Paper, Cardboard and Plastic</li>
+                                <li>Commercial, Domestic and Garden</li>
                             </ul>
                         </div>
                     </div>
@@ -75,9 +68,8 @@ export default function Waste(){
                             <img loading="lazy" src={snowy} className={`${wasteCss.infoImgCover} ${wasteCss.imgInvisible} ${wasteCss.snowyImg}`} onLoad={(e) => {e.target.classList.toggle(`${wasteCss.imgInvisible}`)}} alt="variety of skip sizes" />
                         </div>  
                         <div className={wasteCss.panelText} id={wasteCss.panel2}>
-                            <h3>Putting you and the environment first</h3>
-                            <p>At D.W Parker Skip Hire our main concerns are the environment, public safety and health.</p>
-                            <p>Our experienced team are trained to dispose safely of all types of waste. If you have any queries or concerns or simply want advice on disposing of your waste, please do not hesitate to contact us.</p>
+                            <h3>Our Commitment To The Environment</h3>
+                            <p>The majority of materials that pass through our site is recycled. Any non-recyclable waste is properly disposed of in ecologically responsible landfill sites.</p>
                         </div>
                     </div>
                     <div className={wasteCss.panel} id={wasteCss.panel3}>
@@ -91,8 +83,8 @@ export default function Waste(){
                             <img loading="lazy" src={tipper} className={`${wasteCss.infoImgCover} ${wasteCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${wasteCss.imgInvisible}`)}} alt="tipper" />
                         </div>  
                         <div className={wasteCss.panelText}>
-                            <h3>What we offer</h3>
-                            <p>At our facility in Ardrossan we aim to recycle as much as possible.  We take your rubbish and sort it out using manual labour and our mechanical picking stations.</p>
+                            <h3>What We Offer</h3>
+                            <p>At our facility in Ardrossan we aim to recycle as much as possible. We take your rubbish and sort it out using manual labour and our mechanical picking stations.</p>
                         </div>
                     </div>
                     <div className={wasteCss.panel} id={wasteCss.panel4}>
@@ -106,8 +98,9 @@ export default function Waste(){
                             <img loading="lazy" src={skipSequence} className={`${wasteCss.infoImgCover} ${wasteCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${wasteCss.imgInvisible}`)}} alt="various skips in sequnece" />
                         </div>  
                         <div className={wasteCss.panelText}>
-                            <h3>What we don't accept:</h3>
-                            <p>Plasterboard, tyres, fridges or freezers, paint tins, gas bottles, any hazardous materials eg. asbestos. We do reserve the right to return these items to your property.</p>
+                            <h3>What Can Not Be Thrown Away?</h3>
+                            <p>We are able to process most everyday items, however <span className={wasteCss.bold}>we can not take:</span> electrical appliances, plaster board, tyres, compressed gas cylinders, chemicals, and hazardous materials, like asbestos, etc. If you are unsure contact our team for advice.</p>
+                            <p>We do reserve the right to return these items to your property.</p>
                         </div>
                     </div>
                 </div>

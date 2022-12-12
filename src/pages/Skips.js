@@ -34,13 +34,9 @@ export default function Skips(){
             <div className={skipsCss.headerContainer}>
                 <div className={skipsCss.headerDiv}>
                     <img className={skipsCss.iconStyle} src={recycleColour} alt="logo of DWP"/>
-                    <h1>Do you want to hire a skip?</h1>
-                    <p>At D.W Parker Skip Hire, we offer a range of skips for hire throughout Ayrshire. Why not get in touch today?</p>
+                    <h1>Need a skip and don't know where to start?</h1>
+                    <p>D.W. Parker Skip Hire offers a variety of skip rentals throughout Ayrshire. Contact us today for expert guidance on what services are right for your needs.</p>
                 </div>
-            </div>
-            <div className={skipsCss.introductionDiv}>
-                <h2>Skip Hire in Ayrshire</h2>
-                <p>Had a recent property clearance? Has building work left you with excess materials and waste at your property? Whatever the reason you need to hire a skip, D.W Parker Skip Hire have skips available for hire for both domestic and commercial uses. We offer flexible hire services to all our customers at the most competitive rates in Ayrshire. Our skips are available to hire for both short term and long term contracts depending on our customer’s needs. No matter how long you want to hire our skips for, all our contracts are Ayrshire's most competitive prices.</p>
             </div>
             <div className={skipsCss.outerPanelDiv}>
                 <div className={skipsCss.panelDiv}>
@@ -55,8 +51,8 @@ export default function Skips(){
                             <img loading="lazy" src={lorryAndVan} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="lorry and van" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel1}>
-                            <h3>Skip hire to suit your needs</h3>
-                            <p>Our prices are based on a 7 day hire but if you are looking for a longer term arrangement contact us and we will see what we can do to help.</p>
+                            <h3>Skip Rental Periods</h3>
+                            <p>Our prices are based on a 7 day rental period, but if you are looking for a long term contract, please contact us.</p>
                         </div>
                     </div>
                     <div className={skipsCss.panel}>
@@ -70,8 +66,8 @@ export default function Skips(){
                             <img loading="lazy" src={skipSequence} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="variety of skip sizes" />
                         </div>  
                         <div className={skipsCss.panelText} id={skipsCss.panel2}>
-                            <h3>Skip sizes to suit all properties</h3>
-                            <p>From 4yd, 8yd and 12yd builders to 40yd ROLO bins, we have a range of sizes available depending on your needs.</p>
+                            <h3>Get The Right Size For You</h3>
+                            <p>Providing 4yd, 8yd, 12yd and 16yrd standard to 15yrd, 20yd and 40yrd ROLO bins depending on your needs.</p>
                         </div>
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel3}>
@@ -85,8 +81,8 @@ export default function Skips(){
                             <img loading="lazy" src={sign} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="D.W.Parker Sign" />
                         </div>  
                         <div className={skipsCss.panelText}>
-                            <h3>What we offer</h3>
-                            <p>At D.W Parker Skip Hire we stock a wide range of skips that are suitable for needs of all sizes. Our skips are suitable for anything from small, house clearances to large scale building site waste disposal. We stock both midi and maxi skips and our experts are available to give advice on the best skip for your needs. We supply skips of all sizes from 4, 8, 12 and 16 standard skips to 15, 20 and 40 cubic yard ROLO options.</p>
+                            <h3>What We Offer</h3>
+                            <p>At D.W. Parker Skip Hire Ltd we wide range of skips and services to facilitate anything from home to construction site waste clearances, providing both midi and maxi skips. Contact our specialists for advice on the best services for you.</p>
                         </div>
                     </div>
                     <div className={skipsCss.panel} id={skipsCss.panel4}>
@@ -100,13 +96,13 @@ export default function Skips(){
                             <img loading="lazy" src={lorryRow} className={`${skipsCss.infoImgCover} ${skipsCss.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${skipsCss.imgInvisible}`)}} alt="row of lorries" />
                         </div>  
                         <div className={skipsCss.panelText}>
-                        <h3>Skip the hassle</h3>
+                        <h3>Hassle Free Services</h3>
+                        <p>We are experts waste removal, here to support you with services specialised to what you need. We provide:</p>
                             <ul>
-                                <li>Difficult access service</li>
-                                <li>Wait and load service</li>
-                                <li>Commercial skip hire</li>
-                                <li>Domestic skip hire</li>
-                                <li>Roll on/roll off skip hire</li>
+                                <li>Difficult access services</li>
+                                <li>Wait and load services</li>
+                                <li>Commercial and Domestic Skip Hire</li>
+                                <li>Roll on/Roll off Skip Hire</li>
                             </ul>
                         </div>
                     </div>
@@ -117,29 +113,42 @@ export default function Skips(){
                 <div className={skipsCss.infoContainer}>
                     <div className={skipsCss.skipInfo}>
                         <h4>4 Yard Skip</h4>
-                        <p></p>
+                        <p>Ideal for kitchen and bathroom refittings, as well as gardening waste.</p>
+                        <p>These can hold approximately 35 to 40 black bin bags.</p>
+                        <p>The dimensions are approximately 7 ft in length x 4 ft in width x 3 ft height.</p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>8 Yard Skip</h4>
-                        <p></p>
+                        <p>Ideal for kitchen and bathroom renovations, as well as gardening waste.</p>
+                        <p>These can hold approximately 65-70 black bin bags.</p>
+                        <p>The dimensions are approximately 12 ft length x 6 ft width x 4.5 ft height.</p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>12 Yard Skip</h4>
-                        <p></p>
+                        <p>Perfect for industrial and commercial purposes. Ideal for holding large bulky items and construction materials.</p>
+                        <p>These can hold approximately 120 black bin bags.</p>
+                        <p>The dimensions are approximately 13 ft length x 6 ft width x 6.5 ft height.</p>
                     </div>
                     <div className={skipsCss.skipInfo}>
-                        <h4></h4>
-                        <p></p>
+                        <h4>16 Yard Skip</h4>
+                        <p>Perfect for large house clean clearances or renovations. Ideal for holding light items and large bulky construction materials.</p>
+                        <p>These can hold approximately 170 black bin bags.</p>
+                        <p>The dimensions are approximately 13.5 ft length x 6 ft width x 6.5 ft height.</p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>20 Yard Bin</h4>
-                        <p>20 yard bins also known as Roll-On & Roll-Off skip. 20 yard bins can carry numerous amounts of waste very quickly where the regular skips are not the excellent. 20 yard skip can hold 220 to 230 black bin bags and the dimensions are approximately 20 ft length x 8 ft width x 4 ft height.</p>
+                        <p>Popular amoungst builders to hold considerable waste and bulky items.</p>
+                        <p>These can hold approximately 220 black bin bags.</p>
+                        <p>The dimensions are approximately 20 ft length x 8 ft width x 4 ft height.</p>
                     </div>
                     <div className={skipsCss.skipInfo}>
                         <h4>40 Yard Bin</h4>
-                        <p>40 yard skip is the largest skip size available in the skip hire industry. These skips can carry numerous amount of rubbish and the best choice for a vast amount of waste removal. 40 yard skip can carry 400 tones or can hold 440 to 450 black bin bags. The dimensions are 20 ft Length x 8 ft Width x 8.5 ft Height.</p>
+                        <p>Perfect for both commercial and domestic sites for the removal of a huge amount of mixed waste, such as metal, lumber, gardening waste, light and heavy items.</p>
+                        <p>These can hold approximately 440 black bin bags.</p>
+                        <p>The dimensions are approximately 20 ft length x 8 ft width x 8.5 ft height.</p>
                     </div>
                 </div>
+                <p>* dimensions are approximations as variations exist between manufacturers.</p>
             </div>
             <div className={skipsCss.skipDisplayDiv}>
                 <div className={skipsCss.skipDisplayElem}>

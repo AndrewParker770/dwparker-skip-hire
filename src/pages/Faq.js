@@ -27,7 +27,7 @@ function Faq(){
                 <div className={faqCss.questions}>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={alarm} loading="lazy" alt="alarm clock icon"/>
-                        <h4>What are your business hours?</h4>
+                        <h4>What time do you open and close?</h4>
                         <ul>
                             <li>Monday - Friday: 6am - 5pm</li>
                             <li>Saturday: 8am - 12pm</li>
@@ -36,8 +36,9 @@ function Faq(){
                     </div>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={trash} loading="lazy" alt="bin icon"/>
-                        <h4>What can be put in a skip?</h4>
-                        <p>We take most household items, <span className={faqCss.bold}>except</span> fridge freezers, plaster board, tyres and gas bottles. We <span className={faqCss.bold}>can not</span> take hazardous materials, like asbestos.</p>
+                        <h4>What can be thrown away in a skip?</h4>
+                        <p>We are able to process most everyday items, however <span className={faqCss.bold}>we can not take:</span> electrical appliances, plaster board, tyres, compressed gas cylinders, chemicals, and hazardous materials, like asbestos, etc. If you are unsure contact our team for advice.</p>
+                        <p>We do reserve the right to return these items to your property.</p>
                     </div>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={map} loading="lazy" alt="map pin icon"/>
@@ -51,27 +52,27 @@ function Faq(){
                     <div className={faqCss.question}>
                         <span>£</span>
                         <h4>What type of payment methods do you accept?</h4>
-                        <p>We collect cash or cheque on delivery of the skip, or we take card payment over the phone. Our card machine takes most major cards.</p>
+                        <p>We accept cash or cheques, or we can take credit card payments over the phone. Most major cards are accepted by our card reader. <span className={faqCss.bold}>Payment is required on delivery of the skip.</span></p>
                     </div>
                     <div className={faqCss.question}>
                         <img id={faqCss.iconHourGlass} className={faqCss.iconStyle} src={hourglass} loading="lazy" alt="hourglass icon"/>
-                        <h4>How long can I have the skip?</h4>
-                        <p>The price we quote is for a weeks hire, but a longer term hire can be arranged. Conversely, if you only need the skip for a few days we can pick it up if you give us a call once you're done. We also offer a wait and load service.</p>
+                        <h4>For how long can rent a skip?</h4>
+                        <p>The quoted price is for a week's rental, however a longer rental period may be arranged on request. If you only need the skip for a few days, please call us when its full so we can come uplift it. We also provide a wait and load service.</p>
                     </div>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={calendar} loading="lazy" alt="calendar icon"/>
                         <h4>How much notice do you need to order a skip?</h4>
-                        <p>We usually need just one days notice and, on occasion, we can deliver same day. During busier times, please leave 2-3 days notice.</p>
+                        <p>Typically, we only require one day's notice, though occasionally we can deliver the same day. Please provide two to three days' notice at peak times.</p>
                     </div>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={pie} loading="lazy" alt="pie chart icon"/>
                         <h4>If I only need the skip for one day is it cheaper?</h4>
-                        <p>No, the price is still the same. As it is same amount of rubbish we need to process in the correct manner. We do however pride ourselves on helping you, the customer out as much as possible.  On request we can drop off and pick up the skip on the same day, we also offer a wait and load service.</p>
+                        <p>No, the cost will be the same as the amount of waste we must process is the same.</p>
                     </div>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={recycle} loading="lazy" alt="recycle icon"/>
                         <h4>What happens to my rubbish?</h4>
-                        <p>After we collect your skip we bring it back to our waste transfer station located at our site in Ardrossan. We sort through your rubbish and recycle as much as possible.</p>
+                        <p>After we pick up your skip, we return it to our garbage transfer station at our main site in Ardrossan. We sort through your trash and attempt to recycle as much as we can.</p>
                     </div>
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={traffic} loading="lazy" alt="recycle icon"/>

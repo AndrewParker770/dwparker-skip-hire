@@ -35,6 +35,17 @@
     -webkit-border-radius: 25px;
 }
 
+.contactPointer
+{
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.contactPointer:hover
+{
+    font-size: 18px;
+}
+
 .headerDiv > h1{
     color: var(--title-color);
     text-align: center;

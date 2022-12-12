@@ -99,7 +99,9 @@ function Home() {
           <div className={homeCSS.headerDiv}>
               <img className={homeCSS.iconStyle} src={recycleColour} alt="logo of DWP"/>
               <h1>Delivering Skips across Ayrshire</h1>
-              <p>Here at D.W Parker Skip Hire we go the extra mile to ensure that you get the right skip at the right time, for your needs. Providing a wide selection of skips available for flexible short and long term contracts to help you with waste removal in Ayrshire and surrounding areas.</p>
+              <p>D.W.Parker Skip Hire is a local, family-owned business based in Ardrossan. We go the extra mile to ensure that you get the right skip at the right time, for both your commercial and residential needs, providing skips all across Ayrshire.</p>
+              <p>Founded in 1993, we have nearly 30 years of experience providing comprehensive skip hire. In our years of service we have built a customer base that knows us to be a company they can rely on to provide them superior, honest and dependable skip-hire service and expert guidance.</p>
+              <p>We offer a same or next day skip delivery at flexible short or long term hire rental for all our skips to suit your needs. All this whilst providing competitive rates, regardless of the skip rental period.</p>
           </div>
       </div>
 
@@ -118,11 +120,11 @@ function Home() {
               <img loading="lazy" src={individualSkip} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="individual D.W>Parker skip" />
             </div>  
             <div className={homeCSS.panelText}>
-              <h3>Waste management services</h3>
+              <h3>Waste Management Services</h3>
               <div className={homeCSS.headerTextDiv}>
-                <p>For professional waste management services, contact D.W Parker Skip Hire.</p>
+                <p>We provide professional waste management services for all your needs.</p>
               </div>
-              <Link className={homeCSS.panelLink} to="/waste-management">Waste management services</Link>
+              <Link className={homeCSS.panelLink} to="/waste-management">Waste Management Services</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -136,11 +138,11 @@ function Home() {
               <img loading="lazy" src={environment} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="sunrise over D.W.Parker Skip Hire" />
             </div>  
             <div className={homeCSS.panelText}>
-              <h3>Environmentally friendly recycling</h3>
+              <h3>Ecologically Responsible Disposal</h3>
               <div className={homeCSS.headerTextDiv}>
-                <p>We are Scottish Environment Protection Agency (SEPA) registered and authorised as a controlled waste carrier. At D.W Parker Skip Hire, we care about the environment and aim to recycle the majority of the waste that we collect from our skips.</p>
+                <p>We are registered and authorised by the Scottish Environment Protection Agency (SEPA) as a controlled waste carrier. We promote environmentally conscious practices to recycle your waste the right way.</p>
               </div>
-              <Link className={homeCSS.panelLink} to="/recycled-materials">Environmentally friendly recycling</Link>
+              <Link className={homeCSS.panelLink} to="/recycled-materials">Ecologically Responsible Disposal</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -154,11 +156,11 @@ function Home() {
               <img loading="lazy" src={individualLorry} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="individual D.W Parker Lorry" />
             </div>  
             <div className={homeCSS.panelText}>
-                <h3>Rubbish disposal</h3>
+                <h3>Waste Disposal</h3>
                 <div className={homeCSS.headerTextDiv}>
-                  <p>For expert skip hire and waste disposal for your domestic or commercial property in Ayrshire, D.W Parker offer an honest, reliable service and expert advice.</p>
+                  <p>For professional skip rentals and waste management for residential or commercial properties, D.W.Parker Ltd offers straightforward, dependable service and professional guidance.</p>
                   </div>
-                <Link className={homeCSS.panelLink} to="/waste-management">Rubbish disposal</Link>
+                <Link className={homeCSS.panelLink} to="/waste-management">Waste Disposal</Link>
             </div>
           </div>
         </div>
@@ -179,11 +181,11 @@ function Home() {
               <img loading="lazy" src={skipSequence} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="variety of skip sizes" />
             </div>  
             <div className={homeCSS.panelText}>
-              <h3>Skips in all sizes</h3>
+              <h3>Skips For Your Needs</h3>
               <div className={homeCSS.headerTextDiv}>
-                <p>We supply a wide range of skip sizes that are perfect for both domestic and commercial use. Our experts can advise you of the best skip for your requirements.</p>
+                <p>We offer a wide variety of skip sizes for household and commercial use. Our experts will advise you on the best container for your needs.</p>
               </div>
-              <Link className={homeCSS.panelLink} to="/available-skips">Skip hire</Link>
+              <Link className={homeCSS.panelLink} to="/available-skips">Skips For Your Needs</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -197,11 +199,11 @@ function Home() {
               <img loading="lazy" src={lorryAndVan} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="van and lorry" />
             </div>  
             <div className={homeCSS.panelText}>
-              <h3>Household waste removal experts</h3>
+              <h3>Domestic Waste Removal Specialists</h3>
               <div className={homeCSS.headerTextDiv}>
-                <p>At D.W Parker Skip Hire we are proud to be SEPA registered and approved waste carriers. We can expertly remove waste materials and aim to recycle the majority of the materials we collect.</p>
+                <p>We at D.W.Parker Skip Hire Ltd are proud to be certified SEPA waste carriers; we provide expert guidance in the responsible management of waste materials.</p>
               </div>
-              <Link className={homeCSS.panelLink} to="/waste-management">Waste management</Link>
+              <Link className={homeCSS.panelLink} to="/waste-management">Waste Management</Link>
             </div>
           </div>
           <div className={homeCSS.panel}>
@@ -215,9 +217,9 @@ function Home() {
               <img loading="lazy" src={travel} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt="lorry to largs" />
             </div>  
             <div className={homeCSS.panelText}>
-              <h3>Local services for you</h3>
+              <h3>Local Services For You</h3>
               <div className={homeCSS.headerTextDiv}>
-                <p>We are a local, family run business based in Ardrossan. We can deliver skips and recycled materials throughout Ayrshire.</p>
+                <p>We are a family run business based in Ardrossan; delivering skips and recycled materials all across Ayrshire.</p>
               </div>
               <Link className={homeCSS.panelLink} to="/contact">Contact Us</Link>
             </div>
@@ -235,7 +237,7 @@ function Home() {
             <a href={facebookLink}><img className={homeCSS.socialIconStyle} src={facebook} alt="link to DWP facebook page"/></a>
             <a href={instaLink}><img className={homeCSS.socialIconStyle} src={instagram} alt="link to DWP instagram page"/></a>
           </div>
-          <p className={homeCSS.socialParagraph}>Follow us to get an insight into our day-to-day operations with regular updates from our team. Leave a like or write a review to help us improve our services.</p>
+          <p className={homeCSS.socialParagraph}>Follow us to get a glimpse into our daily work with regular updates from our team. Leave a like or write a review to help us improve our service.</p>
         </div>
       </div>
     </div>

@@ -33,8 +33,7 @@ export default function Team(){
                 </div>
             </div>
             <div className={teamCss.introductionDiv}>
-                <p>We are more than just a skip hire company.  We are a family run business based in Ardrossan, that has 25 years experience allowing us to provide expert service to all our customers, old and new.</p>
-                <p>At D.W Parker Skip Hire we work hard to allow us to give our customers the best service we can.  All our team members are experienced and reliable to help offer a service second to none.</p>
+                <p>We are more than just a skip hire company. We are a family run business based in Ardrossan, that has nearly 30 years of experience in providing superior professional skip hire services that is second to none.</p>
             </div>
             <div className={teamCss.outerPanelDiv}>
                 <div className={teamCss.panelDiv}>
@@ -43,8 +42,8 @@ export default function Team(){
                             
                         </div>  
                         <div className={teamCss.panelText}>
-                            <h3>David Parker</h3>
-                            <p>Mr. Parker is the founder and manager of the company.  Starting the business in 1995 with one lorry on his family farm.</p>
+                            <h3>David Wilson Parker</h3>
+                            <p>Mr. Parker founded this business in 1995 with one lorry on his family farm.</p>
                         </div>
                     </div>
                     <div className={teamCss.panel}>
@@ -59,8 +58,8 @@ export default function Team(){
                             <img loading="lazy" src={skipLorryDriver} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="skip lorry" />
                         </div>  
                         <div className={teamCss.panelText}>
-                            <h3>Skip Lorry drivers</h3>
-                            <p>Working with us we have 3 full time skip lorry drivers working hard to get your skips delivered to you.</p>
+                            <h3>Skip Lorry Drivers</h3>
+                            <p>We have 3 full time skip lorry drivers devoted to getting your skips delivered to you.</p>
                         </div>
                     </div>
                     <div className={teamCss.panel}>
@@ -75,8 +74,8 @@ export default function Team(){
                             <img loading="lazy" src={tipperDriver} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="tipper" />
                         </div>  
                         <div className={teamCss.panelText}>
-                            <h3>Tipper drivers</h3>
-                            <p>At Parkers we have 4 full time tipper drivers working.</p>
+                            <h3>Tipper Drivers</h3>
+                            <p>At D.W. Parker Skip Hire we have 4 full time tipper drivers working to supply materials for all your needs.</p>
                         </div>
                     </div>
                     <div className={teamCss.panel}>
@@ -85,7 +84,7 @@ export default function Team(){
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Office staff</h3>
-                            <p>Our office staff are always on hand to help and just a phone call away.</p>
+                            <p>Our friendly office staff are only a call away to advise you on what service is right for you.</p>
                         </div>
                     </div>
                     <div className={teamCss.panel}>
@@ -101,7 +100,7 @@ export default function Team(){
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Yard Men</h3>
-                            <p>Onsite working hard to sort through everything that come in and out our yard is our yards men.  Working hard to keep the well oiled machine going.</p>
+                            <p>Our yard men are the backbone of our business, working like a well oiled machine to manage waste collection and sorting.</p>
                         </div>
                     </div>
                     <div className={teamCss.panel}>
@@ -117,7 +116,7 @@ export default function Team(){
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Farm workers</h3>
-                            <p>Our site is located beside the family farm, allowing us to use our other machinery to get jobs done effectively and efficiently.</p>
+                            <p>With our site ebing located beside our family farm, we have access to pretty heavy machinery to get jobs done effectively and efficiently.</p>
                         </div>
                     </div>
                 </div>

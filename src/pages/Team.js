@@ -8,6 +8,8 @@ import tractor from '../images/tractor.jpg';
 import tipperDriver from '../images/tipperDriver.jpg';
 import skipLorryDriver from '../images/skipLorryDriver.jpg';
 import yardMen from '../images/yardMen.jpg';
+import lorryAndVan from '../images/lorryAndVan.jpg';
+import lorrySunset from '../images/lorrySunset.jpg';
 
 import { Blurhash} from "react-blurhash";
 
@@ -39,7 +41,14 @@ export default function Team(){
                 <div className={teamCss.panelDiv}>
                     <div className={teamCss.panel}>
                         <div className={teamCss.panelImg}>
-                            
+                            <Blurhash
+                                hash="LQEy6=#Q-UWC_NIVbIR*ElOFNHn~"
+                                width
+                                height
+                                id={`${teamCss.hashImg} ${teamCss.tipperImage}`}
+                                className={teamCss.headImage}
+                            />
+                            <img loading="lazy" src={lorrySunset} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="lorry at sunset" />
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>David Wilson Parker</h3>
@@ -80,7 +89,14 @@ export default function Team(){
                     </div>
                     <div className={teamCss.panel}>
                         <div className={teamCss.panelImg}>
-
+                            <Blurhash
+                                hash="LkE{kcE8WYoeX=ofj[az5E%1oeWV"
+                                width
+                                height
+                                id={`${teamCss.hashImg} ${teamCss.tipperImage}`}
+                                className={teamCss.headImage}
+                            />
+                            <img loading="lazy" src={lorryAndVan} id={teamCss.tipperImage} className={`${teamCss.infoImgCover} ${teamCss.imgInvisible} ${teamCss.headImage}`} onLoad={(e) => {e.target.classList.toggle(`${teamCss.imgInvisible}`)}} alt="van and lorry" />
                         </div>  
                         <div className={teamCss.panelText}>
                             <h3>Office staff</h3>

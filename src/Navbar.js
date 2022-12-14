@@ -30,7 +30,7 @@ function Navbar() {
     document.documentElement.style.setProperty('--wide-nav-height', headerSize.height + "px")
   };
 
-  const phone_number = "01294 463 597";
+  const phone_number = "+441294463597";
   const email = "info@dwparkerskiphire.co.uk";
 
   const min_height = getComputedStyle(document.documentElement).getPropertyValue('--min-height');

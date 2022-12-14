@@ -31,6 +31,7 @@ function Navbar() {
   };
 
   const phone_number = "+441294463597";
+  const phone_number_text = "(+44)1294 463597";
   const email = "info@dwparkerskiphire.co.uk";
 
   const min_height = getComputedStyle(document.documentElement).getPropertyValue('--min-height');
@@ -105,7 +106,7 @@ function Navbar() {
           <p><a href={`tel:${phone_number}`}><img className={navbarCSS.phoneIcon} src={phoneIcon} alt="icon of a phone"/></a></p>
           <div className={navbarCSS.contactNumbers}>
             <ul>
-              <li id={navbarCSS.contactPhoneNumber}>(+44)1294 463597</li>
+              <li id={navbarCSS.contactPhoneNumber}>{phone_number_text}</li>
               <li id={navbarCSS.contactPointer}><a href={`mailto:${email}`}>{email}</a></li>
             </ul>
           </div>

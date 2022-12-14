@@ -11,7 +11,8 @@ import contactCSS from'./css/contact.module.css';
 
 function Contact() {
 
-  const phone_number = "01294 463 597";
+  const phone_number = "+441294463597";
+  const phone_number_text = "(+44)1294 463597";
   const email = "info@dwparkerskiphire.co.uk";
 
   const form = useRef();
@@ -57,7 +58,7 @@ function Contact() {
       <div className={contactCSS.outerIntroDiv}>
         <div className={contactCSS.contactIntro}>
           <p>For advice on the best skip size for your disposal needs contact D.W Parker Skip Hire today at:</p>
-          <p><a className={contactCSS.contactSpan} href="tel:{phone_number}"> {phone_number}</a> or <a className={contactCSS.contactSpan} href={`mailto:${email}`}> {email}</a></p>
+          <p><a className={contactCSS.contactSpan} href={`tel:${phone_number}`}>{phone_number_text}</a> or <a className={contactCSS.contactSpan} href={`mailto:${email}`}> {email}</a></p>
         </div>
       </div>
       <form id={contactCSS.formID} ref={form} className={formState === "unset" ? `${contactCSS.formLayout}` : `${contactCSS.formLayout} ${contactCSS.invisible}`} onSubmit={sendEmail}>
@@ -82,7 +83,7 @@ function Contact() {
           <div className={contactCSS.symbolCircle}>
             <img className={formState === "denied" ? `${contactCSS.warnSymbol} ${contactCSS.visibleSymbol}` : `${contactCSS.warnSymbol}`} src={alert} alt="message not accepted symbol"/>
           </div>
-          <p>Your message was unable to be sent to our team. Please contact us at: <a className={contactCSS.warnLink} href="tel:{phone_number}"> {phone_number}</a> or <a className={contactCSS.warnLink} href={`mailto:${email}`}> {email}</a>.</p>
+          <p>Your message was unable to be sent to our team. Please contact us at: <a className={contactCSS.warnLink} href={`tel:${phone_number}`}>{phone_number_text}</a> or <a className={contactCSS.warnLink} href={`mailto:${email}`}> {email}</a>.</p>
         </div>
 
         <div id={contactCSS.accecptDiv} className={formState === "accepted" ? `${contactCSS.circleDiv}` : `${contactCSS.invisible}`}>

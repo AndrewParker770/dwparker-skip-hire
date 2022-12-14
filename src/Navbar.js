@@ -102,10 +102,10 @@ function Navbar() {
         </div>
 
         <div className={navbarCSS.phoneDiv}>
-          <p><a href="tel:{phone_number}"><img className={navbarCSS.phoneIcon} src={phoneIcon} alt="icon of a phone"/></a></p>
+          <p><a href={`tel:${phone_number}`}><img className={navbarCSS.phoneIcon} src={phoneIcon} alt="icon of a phone"/></a></p>
           <div className={navbarCSS.contactNumbers}>
             <ul>
-              <li id={navbarCSS.contactPhoneNumber}>{phone_number}</li>
+              <li id={navbarCSS.contactPhoneNumber}>(+44)1294 463597</li>
               <li id={navbarCSS.contactPointer}><a href={`mailto:${email}`}>{email}</a></li>
             </ul>
           </div>

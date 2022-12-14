@@ -68,6 +68,7 @@ function Home() {
     displayImgRef.current.classList.add(`${homeCSS.imgInvisible}`);
   }, [currentIndex]);
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => prev + 1 === images.length ? 0 : prev + 1 );
@@ -75,6 +76,12 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  function removeInvClass(e)
+  {
+    setTimeout(() => {
+      e.target.classList.remove(`${homeCSS.imgInvisible}`);
+    }, 500);
+  }
   
   return (
     <div className={homeCSS.homePageDiv}>
@@ -86,7 +93,7 @@ function Home() {
             height
             id={homeCSS.hashImg}
         />
-        <img key={Date.now()} ref={displayImgRef} loading="lazy" src={images[currentIndex]['img']} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {e.target.classList.toggle(`${homeCSS.imgInvisible}`)}} alt={images[currentIndex]['alt']} />
+        <img key={Date.now()} ref={displayImgRef} loading="lazy" src={images[currentIndex]['img']} className={`${homeCSS.infoImgCover} ${homeCSS.imgInvisible}`} onLoad={(e) => {removeInvClass(e)}} alt={images[currentIndex]['alt']} />
         <div className={homeCSS.setIndexContainer}>
           {images.map( (_, imageIndex) => (
               <div key={imageIndex} onClick={() => (setIndex(imageIndex))} className={currentIndex === imageIndex ? `${homeCSS.indexDot} ${homeCSS.selectedDot}` : `${homeCSS.indexDot}`}></div>

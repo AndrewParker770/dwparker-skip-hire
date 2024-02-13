@@ -51,7 +51,7 @@ function Faq(){
                     </div>
                     <div className={faqCss.question}>
                         <span>£</span>
-                        <h4>What type of payment methods do you accept? Test</h4>
+                        <h4>What type of payment methods do you accept?</h4>
                         <p>We accept cash or cheques, or we can take credit card payments over the phone. Most major cards are accepted by our card reader. <span className={faqCss.bold}>Payment is required on delivery of the skip.</span></p>
                     </div>
                     <div className={faqCss.question}>

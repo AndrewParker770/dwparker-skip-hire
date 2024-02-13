@@ -37,7 +37,7 @@ function Faq(){
                     <div className={faqCss.question}>
                         <img className={faqCss.iconStyle} src={trash} loading="lazy" alt="bin icon"/>
                         <h4>What can be thrown away in a skip?</h4>
-                        <p>We are able to process most everyday items, however <span className={faqCss.bold}>we can not take:</span> electrical appliances, plaster board, tyres, compressed gas cylinders, chemicals, and hazardous materials, like asbestos, etc. If you are unsure contact our team for advice.</p>
+                        <p>We are able to process most everyday items, however <span className={faqCss.bold}>we can not take:</span> electrical appliances, plaster board, tyres, mattresses, large furniture items, compressed gas cylinders, chemicals, and hazardous materials, like asbestos, etc. If you are unsure contact our team for advice.</p>
                         <p>We do reserve the right to return these items to your property.</p>
                     </div>
                     <div className={faqCss.question}>

@@ -104,15 +104,27 @@ h1
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 1em;
 }
 
 .overflowFormElement
 {
     height: 30px;
+    margin-bottom: 0;
+}
+
+@media(max-width: 600px){
+
+    .overflowFormDiv .overflowFormElement:first-child{
+        margin-bottom: 1em;
+    }
 }
 
 @media(min-width: 600px){
+
+    .overflowFormDiv .overflowFormElement:first-child{
+        margin-right: 1em;
+    }
+
     .overflowFormDiv{
         flex-direction: row;
     }
